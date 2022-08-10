@@ -35,32 +35,34 @@
 							><i class="fa-brands fa-whatsapp"></i
 						></a>
 					</p>
-					<p>
-						<a href="#" target="_blank"
-							><i class="fa-brands fa-instagram"></i
-						></a>
-					</p>
 				</div>
 			</div>
 			<div class="div2">
-				<img class="ap" src="https://i.postimg.cc/NMY4t04Y/pngegg.png" alt="" />
 				<img
-					class="pp"
-					src="https://i.postimg.cc/KvsJTxZr/pngegg-1.png"
-					alt=""
-				/>
-				<img
-					class="ro"
+					class="ap"
 					src="https://i.postimg.cc/Sx2V73R0/pngegg-2.png"
 					alt=""
 				/>
+				<img class="pp" src="https://i.postimg.cc/Gm6yWgqw/pngegg.png" alt="" />
+				<img class="ro" src="https://i.postimg.cc/NMY4t04Y/pngegg.png" alt="" />
 			</div>
+		</div>
+	</section>
+	<section id="footer">
+		<div class="footer1"></div>
+		<div class="footer2"></div>
+		<div class="footer3">
+			<p>all-rights-reserved/ Mudassar | Mika</p>
 		</div>
 	</section>
 </template>
 
 <script></script>
 <style scoped>
+	@font-face {
+		font-family: Maron;
+		src: url();
+	}
 	/* header */
 	.contact {
 		height: 3vh;
@@ -117,17 +119,19 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
-		background-color: #34314bff;
+		background-color: #142842;
 	}
 
 	nav a {
 		font-weight: bold;
-		padding: 10px;
-		color: #2c3e50;
+		font-size: 20px;
+		padding: 15px;
+		color: white;
+		text-decoration: none;
 	}
 
 	nav a.router-link-exact-active {
-		color: #42b983;
+		color: #b1b942;
 	}
 	/* header */
 	#landing {
@@ -174,8 +178,8 @@
 	}
 	.ap {
 		position: relative;
-		height: 400px;
-		margin-left: 10%;
+		height: 360px;
+		margin-left: 11%;
 	}
 	.pp {
 		position: relative;
@@ -184,8 +188,8 @@
 	}
 	.ro {
 		position: absolute;
-		margin-top: 1%;
-		height: 480px;
+		margin-top: -3px;
+		height: 520px;
 	}
 	.icons {
 		margin-top: 2%;
@@ -269,5 +273,44 @@
 		);
 		color: white;
 		transition: 1s;
+	}
+	.fa-phone {
+		color: #b1b942;
+	}
+	.fa-clock {
+		color: #b1b942;
+	}
+	.fa-user {
+		color: #b1b942;
+	}
+	.fa-cart-arrow-down {
+		color: #b1b942;
+	}
+	/* footer */
+	.footer1 {
+		height: 20vh;
+		background-color: #142842;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 20px;
+	}
+	.footer2 {
+		height: 50vh;
+		background-color: #192434;
+	}
+	.footer3 {
+		height: 8vh;
+		background-color: #0b2444;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.footer3 p {
+		color: white;
 	}
 </style>
