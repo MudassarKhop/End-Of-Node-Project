@@ -1,32 +1,114 @@
 <template>
-	<section id="contact">
-		<div id="things">
-			<div class="contact">
-				<div class="start">
-					<p class="number"><i class="fa-solid fa-phone"></i> 5555-444-333</p>
-					<p class="times"><i class="fa-solid fa-clock"></i> 8AM-10PM</p>
-				</div>
-				<div class="end">
-					<p class="user">
-						<router-link to="/login"
-							><i class="fa-solid fa-user"></i
-						></router-link>
-						Log In
-					</p>
-					<p class="cart"><i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
-				</div>
+	<div class="footer1">
+		<img
+			class="watch"
+			height="100px"
+			width="200px"
+			src="https://i.postimg.cc/mrr3QpV0/rolex-png-logo-3491.png"
+			alt=""
+		/>
+		<img
+			class="watch"
+			height="115px"
+			width="115px"
+			src="https://i.postimg.cc/sfnJQ93B/patek-philippe-logo.png"
+			alt=""
+		/>
+		<img
+			class="watch"
+			height="100px"
+			width="300px"
+			src="https://i.postimg.cc/zvsCZdp2/Audemars-Piguet-logo-logotype.png"
+			alt=""
+		/>
+		<img
+			class="watch"
+			height="100px"
+			width="300px"
+			src="https://i.postimg.cc/3NVhFG9H/Jaeger-Le-Coultre-logo-logotype.png"
+			alt=""
+		/>
+		<img
+			height="100px"
+			width="250px"
+			src="https://i.postimg.cc/MG7rsBZ8/pngkey-com-chanel-logo-png-5053301.png"
+			alt=""
+		/>
+		<img
+			class="watch"
+			height="200px"
+			width="225px"
+			src="https://i.postimg.cc/cJNC4jjQ/tag-heuer-logo.png"
+			alt=""
+		/>
+	</div>
+	<div class="footer2">
+		<div id="foot">
+			<h1><span>Our Stores</span></h1>
+			<ul>
+				<li><i class="fa-solid fa-chevron-right"></i> Cape Town</li>
+				<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
+				<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
+				<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
+				<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
+			</ul>
+		</div>
+		<div id="foot2">
+			<h1><span>Socials</span></h1>
+			<div>
+				<p>
+					<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+				</p>
+				<p>
+					<a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+				</p>
+				<p>
+					<a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+				</p>
+			</div>
+			<div>
+				<p>
+					<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				</p>
+				<p>
+					<a href="#" target="_blank"><i class="fa-brands fa-google"></i></a>
+				</p>
+				<p>
+					<a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				</p>
 			</div>
 		</div>
-		<div class="nav">
-			<router-link to="/">Home</router-link>
-			<a href="#about">About</a>
-			<router-link to="/products">Products</router-link>
-			<router-link to="/contact">Contact</router-link>
-			<router-link to="/register">Register</router-link>
+		<div id="foot3">
+			<h1><span>Sign Up</span></h1>
+
+			<ul>
+				<li>Become a luxury member with exclusive benefits.</li>
+			</ul>
+			<form>
+				<div class="group">
+					<input type="text" required />
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Email</label>
+				</div>
+
+				<div class="group">
+					<input type="text" required />
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Password</label>
+				</div>
+				<button class="btn">Sign Up</button>
+			</form>
 		</div>
-	</section>
+	</div>
+	<div class="footer3">
+		<p>all-rights-reserved/ Mudassar | Mika</p>
+	</div>
 </template>
-<script></script>
+<script>
+	export default {};
+</script>
 <style scoped>
 	* {
 		margin: 0%;
@@ -37,111 +119,7 @@
 		src: url(../ErvaEsraDemoSemibold-Rpwle.ttf);
 	}
 	@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
-	/* header */
-	#things {
-		margin-bottom: 20px;
-	}
-	.contact {
-		height: 3vh;
-		background-color: transparent;
-		padding: 10px;
-		display: flex;
-		flex-direction: row;
-	}
-	.number {
-		padding-left: 35px;
-		margin: auto;
-		/* margin-left: 52px; */
-		color: white;
-		font-size: 17px;
-	}
-	.times {
-		padding-left: 25px;
-		margin: auto;
-		color: white;
-		font-size: 17px;
-	}
 
-	.start {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: start;
-		align-items: flex-start;
-	}
-	.end {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: end;
-		align-items: flex-end;
-	}
-	.user {
-		margin: auto;
-		margin-left: 975px;
-		color: white;
-		font-size: 17px;
-	}
-	.cart {
-		margin: auto;
-		margin-left: 25px;
-		color: white;
-		font-size: 17px;
-	}
-	.nav {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		padding: 10px;
-		background-color: #142842;
-	}
-
-	.nav a {
-		font-weight: bold;
-		font-size: 20px;
-		padding: 6px;
-		color: white;
-		text-decoration: none;
-	}
-
-	.nav a.router-link-exact-active {
-		color: #b1b942;
-	}
-	/* header */
-	#landing {
-		height: 100vh;
-		background-color: black;
-		background-size: cover;
-	}
-	.father {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		padding: 20px;
-		margin-top: 2%;
-	}
-	.div1 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		width: 45%;
-		height: 70vh;
-	}
-	.div2 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		width: 45%;
-		height: 40vh;
-	}
 	h1 {
 		position: absolute;
 		margin-top: -12%;
@@ -163,27 +141,6 @@
 	}
 	span {
 		color: #b1b942;
-	}
-	.ap {
-		position: relative;
-		height: 360px;
-		margin-left: 8%;
-	}
-	.pp {
-		position: relative;
-		height: 360px;
-		margin-top: 2%;
-		margin-right: 13%;
-	}
-	.ro {
-		position: absolute;
-		margin-top: -3px;
-		height: 520px;
-	}
-	.icons {
-		margin-top: 2%;
-		display: flex;
-		flex-direction: row;
 	}
 	.fa-whatsapp {
 		font-size: 28px;
@@ -306,40 +263,6 @@
 	}
 	.fa-chevron-right {
 		color: #b1b942;
-	}
-	/* about */
-	.about {
-		height: 100vh;
-		background-color: black;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-	.headingabout {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-	.mother {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-	.son1 {
-		height: 80vh;
-		width: 60%;
-		background-color: red;
-	}
-	.son2 {
-		height: 80vh;
-		width: 30%;
-		background-color: red;
 	}
 	/* footer */
 	.footer1 {

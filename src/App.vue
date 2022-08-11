@@ -1,6 +1,7 @@
 <template>
 	<router-view />
 </template>
+<script></script>
 <style>
 	* {
 		margin: 0%;

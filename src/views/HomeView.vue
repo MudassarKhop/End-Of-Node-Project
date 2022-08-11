@@ -7,16 +7,22 @@
 					<p class="times"><i class="fa-solid fa-clock"></i> 8AM-10PM</p>
 				</div>
 				<div class="end">
-					<p class="user"><i class="fa-solid fa-user"></i> Log In</p>
+					<p class="user">
+						<router-link to="/login"
+							><i class="fa-solid fa-user"></i
+						></router-link>
+						Log In
+					</p>
 					<p class="cart"><i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
 				</div>
 			</div>
 		</div>
 		<div class="nav">
 			<router-link to="/">Home</router-link>
-			<router-link to="/about">About</router-link>
-			<router-link to="/about">Products</router-link>
-			<router-link to="/about">Contact</router-link>
+			<a href="#about">About</a>
+			<router-link to="/products">Products</router-link>
+			<router-link to="/contact">Contact</router-link>
+			<router-link to="/register">Register</router-link>
 		</div>
 		<div class="father">
 			<div class="div1">
@@ -50,25 +56,56 @@
 			</div>
 		</div>
 	</section>
-	<secton id="about"></secton>
+	<section id="about" class="about">
+		<div class="headingabout">
+			<h1>About <span>Us</span></h1>
+		</div>
+		<div class="mother">
+			<div class="son1"></div>
+			<div class="son2"></div>
+		</div>
+	</section>
 	<section id="footer">
 		<div class="footer1">
 			<img
+				class="watch"
 				height="100px"
 				width="200px"
 				src="https://i.postimg.cc/mrr3QpV0/rolex-png-logo-3491.png"
 				alt=""
 			/>
 			<img
-				height="200px"
-				width="225px"
-				src="https://i.postimg.cc/cJNC4jjQ/tag-heuer-logo.png"
+				class="watch"
+				height="115px"
+				width="115px"
+				src="https://i.postimg.cc/sfnJQ93B/patek-philippe-logo.png"
 				alt=""
 			/>
 			<img
+				class="watch"
+				height="100px"
+				width="300px"
+				src="https://i.postimg.cc/zvsCZdp2/Audemars-Piguet-logo-logotype.png"
+				alt=""
+			/>
+			<img
+				class="watch"
+				height="100px"
+				width="300px"
+				src="https://i.postimg.cc/3NVhFG9H/Jaeger-Le-Coultre-logo-logotype.png"
+				alt=""
+			/>
+			<img
+				height="100px"
+				width="250px"
+				src="https://i.postimg.cc/MG7rsBZ8/pngkey-com-chanel-logo-png-5053301.png"
+				alt=""
+			/>
+			<img
+				class="watch"
 				height="200px"
 				width="225px"
-				src="https://i.postimg.cc/sfnJQ93B/patek-philippe-logo.png"
+				src="https://i.postimg.cc/cJNC4jjQ/tag-heuer-logo.png"
 				alt=""
 			/>
 		</div>
@@ -428,13 +465,42 @@
 		color: #b1b942;
 	}
 	/* about */
-	#about {
+	.about {
 		height: 100vh;
 		background-color: black;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.headingabout {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.mother {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.son1 {
+		height: 80vh;
+		width: 60%;
+		background-color: red;
+	}
+	.son2 {
+		height: 80vh;
+		width: 30%;
+		background-color: red;
 	}
 	/* footer */
 	.footer1 {
-		height: 20vh;
+		height: 18vh;
 		background-color: #142842;
 		display: flex;
 		flex-direction: row;
@@ -650,6 +716,9 @@
 			width: 0;
 			background: transparent;
 		}
+	}
+	.watch {
+		margin-right: 10px;
 	}
 	/*  */
 </style>
