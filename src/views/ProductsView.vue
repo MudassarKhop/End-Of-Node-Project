@@ -101,7 +101,7 @@
 		font-size: 35px;
 		color: white;
 		margin-bottom: 0;
-		text-shadow: 3px 3px black;
+		text-shadow: 2px 2px black;
 	}
 	p {
 		font-family: "Cormorant SC", serif;

@@ -338,7 +338,9 @@
 		background-color: #142842;
 		color: white;
 		padding: 5px;
+		border: 1px solid #b1b942;
 	}
+
 	li {
 		font-size: 20px;
 		list-style: none;
