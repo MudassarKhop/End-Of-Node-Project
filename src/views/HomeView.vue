@@ -69,42 +69,54 @@
 		<div class="footer1">
 			<img
 				class="watch"
-				height="100px"
+				height="140px"
+				width="250px"
+				src="https://i.postimg.cc/sgCRKW7V/pngwing-com-11.png"
+				alt=""
+			/>
+			<img
+				class="watch"
+				height="150px"
+				width="250px"
+				src="https://i.postimg.cc/vHhDf2wr/audemars-piguet-logo-black-and-white.png"
+				alt=""
+			/>
+			<img
+				height="40px"
+				width="170px"
+				src="https://i.postimg.cc/Hk4mmTfg/5a1c3caaf65d84088faf142f.png"
+				alt=""
+			/>
+			<img
+				height="150px"
 				width="200px"
-				src="https://i.postimg.cc/mrr3QpV0/rolex-png-logo-3491.png"
+				src="https://i.postimg.cc/KjcL0p7S/pngwing-com-6.png"
 				alt=""
 			/>
 			<img
 				class="watch"
-				height="115px"
-				width="115px"
-				src="https://i.postimg.cc/sfnJQ93B/patek-philippe-logo.png"
-				alt=""
-			/>
-			<img
-				class="watch"
-				height="100px"
-				width="300px"
-				src="https://i.postimg.cc/zvsCZdp2/Audemars-Piguet-logo-logotype.png"
-				alt=""
-			/>
-			<img
-				class="watch"
-				height="100px"
-				width="300px"
+				height="50px"
+				width="200px"
 				src="https://i.postimg.cc/3NVhFG9H/Jaeger-Le-Coultre-logo-logotype.png"
 				alt=""
 			/>
 			<img
-				height="100px"
-				width="250px"
-				src="https://i.postimg.cc/MG7rsBZ8/pngkey-com-chanel-logo-png-5053301.png"
+				class="watch"
+				height="150px"
+				width="200px"
+				src="https://i.postimg.cc/59spNWnL/pngwing-com-3.png"
 				alt=""
 			/>
 			<img
 				class="watch"
-				height="200px"
-				width="225px"
+				height="100px"
+				width="200px"
+				src="https://i.postimg.cc/pLSzg2VX/pngwing-com-10.png"
+				alt=""
+			/>
+			<img
+				height="100px"
+				width="125px"
 				src="https://i.postimg.cc/cJNC4jjQ/tag-heuer-logo.png"
 				alt=""
 			/>
@@ -257,10 +269,12 @@
 
 	.nav a {
 		font-weight: bold;
-		font-size: 20px;
-		padding: 6px;
+		font-size: 25px;
+		padding: 8px;
 		color: white;
 		text-decoration: none;
+		text-shadow: 3px 3px black;
+		font-family: "Cormorant SC", serif;
 	}
 
 	.nav a.router-link-exact-active {
@@ -481,26 +495,9 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.mother {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-	}
-	.son1 {
-		height: 80vh;
-		width: 60%;
-		background-color: red;
-	}
-	.son2 {
-		height: 80vh;
-		width: 30%;
-		background-color: red;
-	}
 	/* footer */
 	.footer1 {
-		height: 18vh;
+		height: 10vh;
 		background-color: #142842;
 		display: flex;
 		flex-direction: row;
@@ -574,12 +571,15 @@
 	}
 	#foot h1 {
 		margin-bottom: 50px;
+		text-shadow: 3px 3px black;
 	}
 	#foot2 h1 {
 		margin-bottom: 50px;
+		text-shadow: 3px 3px black;
 	}
 	#foot3 h1 {
 		margin-bottom: 50px;
+		text-shadow: 3px 3px black;
 	}
 	.footer3 {
 		height: 8vh;
@@ -718,7 +718,7 @@
 		}
 	}
 	.watch {
-		margin-right: 10px;
+		margin-right: 30px;
 	}
 	/*  */
 </style>

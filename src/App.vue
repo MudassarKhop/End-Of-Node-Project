@@ -8,6 +8,6 @@
 		padding: 0%;
 	}
 	body {
-		background-color: #d7c49eff;
+		background-color: black;
 	}
 </style>

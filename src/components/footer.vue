@@ -1,30 +1,28 @@
 <template>
-	<section id="contact">
-		<div id="things">
-			<div class="contact">
-				<div class="start">
-					<p class="number"><i class="fa-solid fa-phone"></i> 5555-444-333</p>
-					<p class="times"><i class="fa-solid fa-clock"></i> 8AM-10PM</p>
-				</div>
-				<div class="end">
-					<p class="user">
-						<router-link to="/login"
-							><i class="fa-solid fa-user"></i
-						></router-link>
-						Log In
-					</p>
-					<p class="cart"><i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
-				</div>
+	<div id="things">
+		<div class="contact">
+			<div class="start">
+				<p class="number"><i class="fa-solid fa-phone"></i> 5555-444-333</p>
+				<p class="times"><i class="fa-solid fa-clock"></i> 8AM-10PM</p>
+			</div>
+			<div class="end">
+				<p class="user">
+					<router-link to="/login"
+						><i class="fa-solid fa-user"></i
+					></router-link>
+					Log In
+				</p>
+				<p class="cart"><i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
 			</div>
 		</div>
-		<div class="nav">
-			<router-link to="/">Home</router-link>
-			<a href="#about">About</a>
-			<router-link to="/products">Products</router-link>
-			<router-link to="/contact">Contact</router-link>
-			<router-link to="/register">Register</router-link>
-		</div>
-	</section>
+	</div>
+	<div class="nav">
+		<router-link to="/">Home</router-link>
+		<a href="#about">About</a>
+		<router-link to="/products">Products</router-link>
+		<router-link to="/contact">Contact</router-link>
+		<router-link to="/register">Register</router-link>
+	</div>
 </template>
 <script></script>
 <style scoped>
@@ -38,8 +36,10 @@
 	}
 	@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
 	/* header */
+
 	#things {
 		margin-bottom: 20px;
+		background-color: black;
 	}
 	.contact {
 		height: 3vh;
@@ -100,10 +100,12 @@
 
 	.nav a {
 		font-weight: bold;
-		font-size: 20px;
-		padding: 6px;
+		font-size: 25px;
+		padding: 8px;
 		color: white;
 		text-decoration: none;
+		text-shadow: 3px 3px black;
+		font-family: "Cormorant SC", serif;
 	}
 
 	.nav a.router-link-exact-active {

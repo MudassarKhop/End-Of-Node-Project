@@ -2,42 +2,54 @@
 	<div class="footer1">
 		<img
 			class="watch"
-			height="100px"
+			height="140px"
+			width="250px"
+			src="https://i.postimg.cc/sgCRKW7V/pngwing-com-11.png"
+			alt=""
+		/>
+		<img
+			class="watch"
+			height="150px"
+			width="250px"
+			src="https://i.postimg.cc/vHhDf2wr/audemars-piguet-logo-black-and-white.png"
+			alt=""
+		/>
+		<img
+			height="40px"
+			width="170px"
+			src="https://i.postimg.cc/Hk4mmTfg/5a1c3caaf65d84088faf142f.png"
+			alt=""
+		/>
+		<img
+			height="150px"
 			width="200px"
-			src="https://i.postimg.cc/mrr3QpV0/rolex-png-logo-3491.png"
+			src="https://i.postimg.cc/KjcL0p7S/pngwing-com-6.png"
 			alt=""
 		/>
 		<img
 			class="watch"
-			height="115px"
-			width="115px"
-			src="https://i.postimg.cc/sfnJQ93B/patek-philippe-logo.png"
-			alt=""
-		/>
-		<img
-			class="watch"
-			height="100px"
-			width="300px"
-			src="https://i.postimg.cc/zvsCZdp2/Audemars-Piguet-logo-logotype.png"
-			alt=""
-		/>
-		<img
-			class="watch"
-			height="100px"
-			width="300px"
+			height="50px"
+			width="200px"
 			src="https://i.postimg.cc/3NVhFG9H/Jaeger-Le-Coultre-logo-logotype.png"
 			alt=""
 		/>
 		<img
-			height="100px"
-			width="250px"
-			src="https://i.postimg.cc/MG7rsBZ8/pngkey-com-chanel-logo-png-5053301.png"
+			class="watch"
+			height="150px"
+			width="200px"
+			src="https://i.postimg.cc/59spNWnL/pngwing-com-3.png"
 			alt=""
 		/>
 		<img
 			class="watch"
-			height="200px"
-			width="225px"
+			height="100px"
+			width="200px"
+			src="https://i.postimg.cc/pLSzg2VX/pngwing-com-10.png"
+			alt=""
+		/>
+		<img
+			height="100px"
+			width="125px"
 			src="https://i.postimg.cc/cJNC4jjQ/tag-heuer-logo.png"
 			alt=""
 		/>
@@ -55,7 +67,7 @@
 		</div>
 		<div id="foot2">
 			<h1><span>Socials</span></h1>
-			<div>
+			<div id="icons">
 				<p>
 					<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
 				</p>
@@ -66,7 +78,7 @@
 					<a href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 				</p>
 			</div>
-			<div>
+			<div id="icons">
 				<p>
 					<a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
 				</p>
@@ -85,20 +97,9 @@
 				<li>Become a luxury member with exclusive benefits.</li>
 			</ul>
 			<form>
-				<div class="group">
-					<input type="text" required />
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Email</label>
-				</div>
-
-				<div class="group">
-					<input type="text" required />
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Password</label>
-				</div>
-				<button class="btn">Sign Up</button>
+				<router-link to="/register"
+					><button class="btn">Sign Up</button></router-link
+				>
 			</form>
 		</div>
 	</div>
@@ -127,6 +128,7 @@
 		font-size: 70px;
 		color: white;
 		margin-bottom: none;
+		text-shadow: 3px 3px black;
 	}
 	h2 {
 		font-family: "Cormorant SC", serif;
@@ -266,7 +268,7 @@
 	}
 	/* footer */
 	.footer1 {
-		height: 18vh;
+		height: 10vh;
 		background-color: #142842;
 		display: flex;
 		flex-direction: row;
@@ -311,6 +313,9 @@
 		justify-content: center;
 		align-items: center;
 		color: white;
+	}
+	#icons p {
+		gap: 30px;
 	}
 	#foot3 {
 		width: 30%;
@@ -484,7 +489,7 @@
 		}
 	}
 	.watch {
-		margin-right: 10px;
+		margin-right: 50px;
 	}
 	/*  */
 </style>
