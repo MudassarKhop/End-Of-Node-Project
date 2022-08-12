@@ -19,14 +19,14 @@
 		</div>
 		<div class="nav">
 			<router-link to="/">Home</router-link>
-			<a href="#about">About</a>
+			<a href="/#about">About</a>
 			<router-link to="/products">Products</router-link>
 			<router-link to="/contact">Contact</router-link>
 			<router-link to="/register">Register</router-link>
 		</div>
 		<div class="father">
 			<div class="div1">
-				<h1>Royale <span>Jewellers</span></h1>
+				<h1>Royale <span>JEWELLERS</span></h1>
 				<h2>Luxury Time Keepers</h2>
 				<h5>authorized retailer since 1990</h5>
 				<div class="icons">
@@ -68,16 +68,14 @@
 	<section id="footer">
 		<div class="footer1">
 			<img
-				class="watch"
-				height="140px"
-				width="250px"
+				height="165px"
+				width="265px"
 				src="https://i.postimg.cc/sgCRKW7V/pngwing-com-11.png"
 				alt=""
 			/>
 			<img
-				class="watch"
-				height="150px"
-				width="250px"
+				height="180px"
+				width="280px"
 				src="https://i.postimg.cc/vHhDf2wr/audemars-piguet-logo-black-and-white.png"
 				alt=""
 			/>
@@ -94,21 +92,18 @@
 				alt=""
 			/>
 			<img
-				class="watch"
 				height="50px"
 				width="200px"
 				src="https://i.postimg.cc/3NVhFG9H/Jaeger-Le-Coultre-logo-logotype.png"
 				alt=""
 			/>
 			<img
-				class="watch"
-				height="150px"
+				height="130px"
 				width="200px"
 				src="https://i.postimg.cc/59spNWnL/pngwing-com-3.png"
 				alt=""
 			/>
 			<img
-				class="watch"
 				height="100px"
 				width="200px"
 				src="https://i.postimg.cc/pLSzg2VX/pngwing-com-10.png"
@@ -124,13 +119,20 @@
 		<div class="footer2">
 			<div id="foot">
 				<h1><span>Our Stores</span></h1>
-				<ul>
-					<li><i class="fa-solid fa-chevron-right"></i> Cape Town</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
-				</ul>
+				<div>
+					<ul>
+						<li><i class="fa-solid fa-chevron-right"></i> London</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Geneva</li>
+					</ul>
+				</div>
 			</div>
 			<div id="foot2">
 				<h1><span>Socials</span></h1>
@@ -167,26 +169,10 @@
 			</div>
 			<div id="foot3">
 				<h1><span>Sign Up</span></h1>
-
-				<ul>
-					<li>Become a luxury member with exclusive benefits.</li>
-				</ul>
-				<form>
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Email</label>
-					</div>
-
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Password</label>
-					</div>
-					<button class="btn">Sign Up</button>
-				</form>
+				<p>Become a luxury member with exclusive benefits.</p>
+				<router-link to="/register"
+					><button class="btn">Register</button></router-link
+				>
 			</div>
 		</div>
 		<div class="footer3">
@@ -223,12 +209,15 @@
 		/* margin-left: 52px; */
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
 	}
 	.times {
 		padding-left: 25px;
 		margin: auto;
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 1px;
 	}
 
 	.start {
@@ -250,12 +239,16 @@
 		margin-left: 975px;
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 1px;
 	}
 	.cart {
 		margin: auto;
 		margin-left: 25px;
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 1px;
 	}
 	.nav {
 		display: flex;
@@ -264,17 +257,18 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
-		background-color: #142842;
+		background-color: #183c38;
 	}
 
 	.nav a {
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 20px;
 		padding: 8px;
 		color: white;
 		text-decoration: none;
-		text-shadow: 3px 3px black;
-		font-family: "Cormorant SC", serif;
+		text-shadow: 2px 2px black;
+		letter-spacing: 2px;
+		font-family: "Cinzel Decorative", cursive;
 	}
 
 	.nav a.router-link-exact-active {
@@ -283,7 +277,7 @@
 	/* header */
 	#landing {
 		height: 100vh;
-		background-color: black;
+		background-color: #131312;
 		background-size: cover;
 	}
 	.father {
@@ -315,41 +309,48 @@
 	}
 	h1 {
 		position: absolute;
-		margin-top: -12%;
-		font-family: Maron;
+		margin-top: -14%;
+		font-family: "Aboreto", cursive;
 		font-size: 70px;
 		color: white;
 		margin-bottom: none;
 	}
 	h2 {
-		font-family: "Cormorant SC", serif;
+		font-family: "Cinzel Decorative", cursive;
 		margin-top: none;
 		letter-spacing: 5px;
-		font-size: 50px;
+		font-size: 30px;
 		color: white;
 	}
 	h5 {
-		font-family: "Cormorant SC", serif;
+		font-family: "Cinzel Decorative", cursive;
+		margin-top: 2%;
+		font-size: 15px;
 		color: white;
 	}
 	span {
+		font-family: Maron;
 		color: #b1b942;
+		text-shadow: 4px 3px black;
 	}
 	.ap {
 		position: relative;
 		height: 360px;
 		margin-left: 8%;
+		filter: drop-shadow(0px 10px 3px rgb(176, 176, 176));
 	}
 	.pp {
 		position: relative;
 		height: 360px;
 		margin-top: 2%;
 		margin-right: 13%;
+		filter: drop-shadow(0px 10px 3px rgb(176, 176, 176));
 	}
 	.ro {
 		position: absolute;
 		margin-top: -3px;
 		height: 520px;
+		filter: drop-shadow(0px 10px 3px #90784c);
 	}
 	.icons {
 		margin-top: 2%;
@@ -359,7 +360,7 @@
 	.fa-whatsapp {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -372,7 +373,7 @@
 	.fa-linkedin {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -385,7 +386,7 @@
 	.fa-google {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -398,7 +399,7 @@
 	.fa-instagram {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -411,7 +412,7 @@
 	.fa-twitter {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -424,7 +425,7 @@
 	.fa-facebook {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -496,9 +497,10 @@
 		align-items: center;
 	}
 	/* footer */
+	/* footer medium */
 	.footer1 {
 		height: 10vh;
-		background-color: #142842;
+		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -513,17 +515,48 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.watch {
+		margin-right: 50px;
+	}
+	/* footer big */
 	.footer2 {
-		min-height: 50vh;
-		background-color: #192434;
+		min-height: 40vh;
+		background-color: #040f0f;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		padding-top: 60px;
 		gap: 30px;
 	}
 	#foot {
+		width: 30%;
+		height: 80%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		gap: 10px;
+	}
+	#foot li {
+		font-size: 18px;
+		line-height: 30px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 2px;
+		list-style: none;
+	}
+	#foot2 div {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	#foot2 {
 		width: 30%;
 		height: 80%;
 		display: flex;
@@ -532,17 +565,19 @@
 		justify-content: center;
 		align-items: center;
 		color: white;
+		gap: 10px;
 	}
-	#foot2 {
-		width: 30%;
-		height: 80%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		color: white;
+	#icons p {
+		gap: 30px;
 	}
+	#foot3 p {
+		font-size: 18px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		font-family: "Cinzel Decorative", cursive;
+		text-align: center;
+	}
+
 	#foot3 {
 		width: 30%;
 		height: 80%;
@@ -553,37 +588,18 @@
 		align-items: center;
 		color: white;
 	}
-	#foot3 li {
-		margin-top: 10px;
-	}
-	#foot3 ul {
-		margin-top: 50px;
-	}
-
 	#foot3 button {
-		background-color: #142842;
+		margin-top: 3px;
+		background-color: #183c38;
 		color: white;
 		padding: 5px;
+		border: 1px solid #b1b942;
+		width: 90px;
 	}
-	li {
-		font-size: 20px;
-		list-style: none;
-	}
-	#foot h1 {
-		margin-bottom: 50px;
-		text-shadow: 3px 3px black;
-	}
-	#foot2 h1 {
-		margin-bottom: 50px;
-		text-shadow: 3px 3px black;
-	}
-	#foot3 h1 {
-		margin-bottom: 50px;
-		text-shadow: 3px 3px black;
-	}
+	/* footer small */
 	.footer3 {
 		height: 8vh;
-		background-color: #0b2444;
+		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -592,133 +608,19 @@
 	}
 	.footer3 p {
 		color: white;
+		font-family: "Cinzel Decorative", cursive;
 	}
+	/* footer big headings */
+	#foot h1 {
+		margin-bottom: 30px;
+	}
+	#foot2 h1 {
+		margin-bottom: 20px;
+	}
+	#foot3 h1 {
+		margin-bottom: 10px;
+	}
+
 	/*  */
-	form {
-		margin-top: 19px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-	.group {
-		position: relative;
-		margin-bottom: 23px;
-	}
-	input {
-		font-size: 18px;
-		padding: 10px 10px 10px 5px;
-		display: block;
-		width: 300px;
-		background-color: transparent;
-		border: none;
-		border-bottom: 1px solid #757575;
-		color: white;
-	}
-	input:focus {
-		outline: none;
-	}
-
-	/* LABEL ======================================= */
-	label {
-		color: #999;
-		font-size: 18px;
-		font-weight: normal;
-		position: absolute;
-		pointer-events: none;
-		left: 5px;
-		top: 10px;
-		transition: 0.2s ease all;
-		-moz-transition: 0.2s ease all;
-		-webkit-transition: 0.2s ease all;
-	}
-
-	/* active state */
-	input:focus ~ label,
-	input:valid ~ label {
-		top: -20px;
-		font-size: 14px;
-		color: #b1b942;
-	}
-
-	/* BOTTOM BARS ================================= */
-	.bar {
-		position: relative;
-		display: block;
-		width: 300px;
-	}
-	.bar:before,
-	.bar:after {
-		content: "";
-		height: 2px;
-		width: 0;
-		bottom: 1px;
-		position: absolute;
-		background: #b1b942;
-		transition: 0.2s ease all;
-		-moz-transition: 0.2s ease all;
-		-webkit-transition: 0.2s ease all;
-	}
-	.bar:before {
-		left: 50%;
-	}
-	.bar:after {
-		right: 50%;
-	}
-
-	/* active state */
-	input:focus ~ .bar:before,
-	input:focus ~ .bar:after {
-		width: 50%;
-	}
-
-	/* HIGHLIGHTER ================================== */
-	.highlight {
-		position: absolute;
-		height: 60%;
-		width: 100px;
-		top: 25%;
-		left: 0;
-		pointer-events: none;
-		opacity: 0.5;
-	}
-
-	/* active state */
-	input:focus ~ .highlight {
-		-webkit-animation: inputHighlighter 0.3s ease;
-		-moz-animation: inputHighlighter 0.3s ease;
-		animation: inputHighlighter 0.3s ease;
-	}
-
-	/* ANIMATIONS ================ */
-	@-webkit-keyframes inputHighlighter {
-		from {
-			background: #5264ae;
-		}
-		to {
-			width: 0;
-			background: transparent;
-		}
-	}
-	@-moz-keyframes inputHighlighter {
-		from {
-			background: #5264ae;
-		}
-		to {
-			width: 0;
-			background: transparent;
-		}
-	}
-	@keyframes inputHighlighter {
-		from {
-			background: #5264ae;
-		}
-		to {
-			width: 0;
-			background: transparent;
-		}
-	}
-	.watch {
-		margin-right: 30px;
-	}
 	/*  */
 </style>

@@ -18,7 +18,7 @@
 	</div>
 	<div class="nav">
 		<router-link to="/">Home</router-link>
-		<a href="#about">About</a>
+		<a href="/#about">About</a>
 		<router-link to="/products">Products</router-link>
 		<router-link to="/contact">Contact</router-link>
 		<router-link to="/register">Register</router-link>
@@ -43,7 +43,7 @@
 	}
 	.contact {
 		height: 3vh;
-		background-color: transparent;
+		background-color: #131312;
 		padding: 10px;
 		display: flex;
 		flex-direction: row;
@@ -54,12 +54,15 @@
 		/* margin-left: 52px; */
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
 	}
 	.times {
 		padding-left: 25px;
 		margin: auto;
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 1px;
 	}
 
 	.start {
@@ -81,12 +84,16 @@
 		margin-left: 975px;
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 1px;
 	}
 	.cart {
 		margin: auto;
 		margin-left: 25px;
 		color: white;
 		font-size: 17px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 1px;
 	}
 	.nav {
 		display: flex;
@@ -95,17 +102,18 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
-		background-color: #142842;
+		background-color: #183c38;
 	}
 
 	.nav a {
 		font-weight: bold;
-		font-size: 25px;
+		font-size: 20px;
 		padding: 8px;
 		color: white;
 		text-decoration: none;
-		text-shadow: 3px 3px black;
-		font-family: "Cormorant SC", serif;
+		text-shadow: 2px 2px black;
+		letter-spacing: 2px;
+		font-family: "Cinzel Decorative", cursive;
 	}
 
 	.nav a.router-link-exact-active {
@@ -190,7 +198,7 @@
 	.fa-whatsapp {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -203,7 +211,7 @@
 	.fa-linkedin {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -216,7 +224,7 @@
 	.fa-google {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -229,7 +237,7 @@
 	.fa-instagram {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -242,7 +250,7 @@
 	.fa-twitter {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -255,7 +263,7 @@
 	.fa-facebook {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -346,7 +354,7 @@
 	/* footer */
 	.footer1 {
 		height: 18vh;
-		background-color: #142842;
+		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -380,6 +388,7 @@
 		justify-content: center;
 		align-items: center;
 		color: white;
+		font-family: "Cinzel Decorative", cursive;
 	}
 	#foot2 {
 		width: 30%;
@@ -409,7 +418,7 @@
 	}
 
 	#foot3 button {
-		background-color: #142842;
+		background-color: #183c38;
 		color: white;
 		padding: 5px;
 	}
@@ -435,9 +444,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.footer3 p {
-		color: white;
-	}
+
 	/*  */
 	form {
 		margin-top: 19px;

@@ -64,7 +64,7 @@
 <style scoped>
 	section {
 		height: 86vh;
-		background-color: black;
+		background-color: #131312;
 	}
 	.filters {
 		padding: 20px;

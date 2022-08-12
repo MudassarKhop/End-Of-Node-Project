@@ -52,7 +52,7 @@
 <style scoped>
 	section {
 		height: 87vh;
-		background-color: black;
+		background-color: #131312;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -62,12 +62,13 @@
 	.register {
 		min-height: 600px;
 		width: 400px;
-		background-color: #142842;
+		background-color: #040f0f;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		border-radius: 5%;
 	}
 	.btn {
 		border: 2px solid #b1b942;
@@ -195,23 +196,20 @@
 		}
 	}
 	h1 {
-		font-family: Maron;
+		font-family: "Aboreto", cursive;
 		font-size: 35px;
 		color: white;
 		margin-bottom: 0;
 		text-shadow: 3px 3px black;
 	}
 	p {
-		font-family: "Cormorant SC", serif;
+		font-family: "Cinzel Decorative", cursive;
 		margin-top: none;
-		font-size: 20px;
-		color: white;
-	}
-	h5 {
-		font-family: "Cormorant SC", serif;
+		font-size: 15px;
 		color: white;
 	}
 	span {
+		font-family: Maron;
 		color: #b1b942;
 	}
 </style>

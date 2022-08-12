@@ -1,16 +1,14 @@
 <template>
 	<div class="footer1">
 		<img
-			class="watch"
-			height="140px"
-			width="250px"
+			height="165px"
+			width="265px"
 			src="https://i.postimg.cc/sgCRKW7V/pngwing-com-11.png"
 			alt=""
 		/>
 		<img
-			class="watch"
-			height="150px"
-			width="250px"
+			height="180px"
+			width="280px"
 			src="https://i.postimg.cc/vHhDf2wr/audemars-piguet-logo-black-and-white.png"
 			alt=""
 		/>
@@ -27,21 +25,18 @@
 			alt=""
 		/>
 		<img
-			class="watch"
 			height="50px"
 			width="200px"
 			src="https://i.postimg.cc/3NVhFG9H/Jaeger-Le-Coultre-logo-logotype.png"
 			alt=""
 		/>
 		<img
-			class="watch"
-			height="150px"
+			height="130px"
 			width="200px"
 			src="https://i.postimg.cc/59spNWnL/pngwing-com-3.png"
 			alt=""
 		/>
 		<img
-			class="watch"
 			height="100px"
 			width="200px"
 			src="https://i.postimg.cc/pLSzg2VX/pngwing-com-10.png"
@@ -57,13 +52,20 @@
 	<div class="footer2">
 		<div id="foot">
 			<h1><span>Our Stores</span></h1>
-			<ul>
-				<li><i class="fa-solid fa-chevron-right"></i> Cape Town</li>
-				<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
-				<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
-				<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
-				<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
-			</ul>
+			<div>
+				<ul>
+					<li><i class="fa-solid fa-chevron-right"></i> London</li>
+					<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
+					<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
+					<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
+					<li><i class="fa-solid fa-chevron-right"></i> Geneva</li>
+				</ul>
+			</div>
 		</div>
 		<div id="foot2">
 			<h1><span>Socials</span></h1>
@@ -92,15 +94,10 @@
 		</div>
 		<div id="foot3">
 			<h1><span>Sign Up</span></h1>
-
-			<ul>
-				<li>Become a luxury member with exclusive benefits.</li>
-			</ul>
-			<form>
-				<router-link to="/register"
-					><button class="btn">Sign Up</button></router-link
-				>
-			</form>
+			<p>Become a luxury member with exclusive benefits.</p>
+			<router-link to="/register"
+				><button class="btn">Register</button></router-link
+			>
 		</div>
 	</div>
 	<div class="footer3">
@@ -130,24 +127,14 @@
 		margin-bottom: none;
 		text-shadow: 3px 3px black;
 	}
-	h2 {
-		font-family: "Cormorant SC", serif;
-		margin-top: none;
-		letter-spacing: 5px;
-		font-size: 50px;
-		color: white;
-	}
-	h5 {
-		font-family: "Cormorant SC", serif;
-		color: white;
-	}
+
 	span {
 		color: #b1b942;
 	}
 	.fa-whatsapp {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -160,7 +147,7 @@
 	.fa-linkedin {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -173,7 +160,7 @@
 	.fa-google {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -186,7 +173,7 @@
 	.fa-instagram {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -199,7 +186,7 @@
 	.fa-twitter {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -212,7 +199,7 @@
 	.fa-facebook {
 		font-size: 28px;
 		display: inline-block;
-		background: #142842;
+		background: #183c38;
 		color: white;
 		line-height: 1;
 		padding: 8px 0;
@@ -266,10 +253,10 @@
 	.fa-chevron-right {
 		color: #b1b942;
 	}
-	/* footer */
+	/* footer medium */
 	.footer1 {
 		height: 10vh;
-		background-color: #142842;
+		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -284,17 +271,48 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.watch {
+		margin-right: 50px;
+	}
+	/* footer big */
 	.footer2 {
-		min-height: 50vh;
-		background-color: #192434;
+		min-height: 40vh;
+		background-color: #040f0f;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		padding-top: 60px;
 		gap: 30px;
 	}
 	#foot {
+		width: 30%;
+		height: 80%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		gap: 10px;
+	}
+	#foot li {
+		font-size: 18px;
+		line-height: 30px;
+		font-family: "Cinzel Decorative", cursive;
+		letter-spacing: 2px;
+		list-style: none;
+	}
+	#foot2 div {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+	#foot2 {
 		width: 30%;
 		height: 80%;
 		display: flex;
@@ -303,20 +321,19 @@
 		justify-content: center;
 		align-items: center;
 		color: white;
-	}
-	#foot2 {
-		width: 30%;
-		height: 80%;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-items: center;
-		color: white;
+		gap: 10px;
 	}
 	#icons p {
 		gap: 30px;
 	}
+	#foot3 p {
+		font-size: 18px;
+		line-height: 30px;
+		letter-spacing: 2px;
+		font-family: "Cinzel Decorative", cursive;
+		text-align: center;
+	}
+
 	#foot3 {
 		width: 30%;
 		height: 80%;
@@ -327,36 +344,18 @@
 		align-items: center;
 		color: white;
 	}
-	#foot3 li {
-		margin-top: 10px;
-	}
-	#foot3 ul {
-		margin-top: 50px;
-	}
-
 	#foot3 button {
-		background-color: #142842;
+		margin-top: 3px;
+		background-color: #183c38;
 		color: white;
 		padding: 5px;
 		border: 1px solid #b1b942;
+		width: 90px;
 	}
-
-	li {
-		font-size: 20px;
-		list-style: none;
-	}
-	#foot h1 {
-		margin-bottom: 50px;
-	}
-	#foot2 h1 {
-		margin-bottom: 50px;
-	}
-	#foot3 h1 {
-		margin-bottom: 50px;
-	}
+	/* footer small */
 	.footer3 {
 		height: 8vh;
-		background-color: #0b2444;
+		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -365,133 +364,18 @@
 	}
 	.footer3 p {
 		color: white;
+		font-family: "Cinzel Decorative", cursive;
 	}
-	/*  */
-	form {
-		margin-top: 19px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+	/* footer big headings */
+	#foot h1 {
+		margin-bottom: 30px;
 	}
-	.group {
-		position: relative;
-		margin-bottom: 23px;
+	#foot2 h1 {
+		margin-bottom: 20px;
 	}
-	input {
-		font-size: 18px;
-		padding: 10px 10px 10px 5px;
-		display: block;
-		width: 300px;
-		background-color: transparent;
-		border: none;
-		border-bottom: 1px solid #757575;
-		color: white;
-	}
-	input:focus {
-		outline: none;
+	#foot3 h1 {
+		margin-bottom: 10px;
 	}
 
-	/* LABEL ======================================= */
-	label {
-		color: #999;
-		font-size: 18px;
-		font-weight: normal;
-		position: absolute;
-		pointer-events: none;
-		left: 5px;
-		top: 10px;
-		transition: 0.2s ease all;
-		-moz-transition: 0.2s ease all;
-		-webkit-transition: 0.2s ease all;
-	}
-
-	/* active state */
-	input:focus ~ label,
-	input:valid ~ label {
-		top: -20px;
-		font-size: 14px;
-		color: #b1b942;
-	}
-
-	/* BOTTOM BARS ================================= */
-	.bar {
-		position: relative;
-		display: block;
-		width: 300px;
-	}
-	.bar:before,
-	.bar:after {
-		content: "";
-		height: 2px;
-		width: 0;
-		bottom: 1px;
-		position: absolute;
-		background: #b1b942;
-		transition: 0.2s ease all;
-		-moz-transition: 0.2s ease all;
-		-webkit-transition: 0.2s ease all;
-	}
-	.bar:before {
-		left: 50%;
-	}
-	.bar:after {
-		right: 50%;
-	}
-
-	/* active state */
-	input:focus ~ .bar:before,
-	input:focus ~ .bar:after {
-		width: 50%;
-	}
-
-	/* HIGHLIGHTER ================================== */
-	.highlight {
-		position: absolute;
-		height: 60%;
-		width: 100px;
-		top: 25%;
-		left: 0;
-		pointer-events: none;
-		opacity: 0.5;
-	}
-
-	/* active state */
-	input:focus ~ .highlight {
-		-webkit-animation: inputHighlighter 0.3s ease;
-		-moz-animation: inputHighlighter 0.3s ease;
-		animation: inputHighlighter 0.3s ease;
-	}
-
-	/* ANIMATIONS ================ */
-	@-webkit-keyframes inputHighlighter {
-		from {
-			background: #5264ae;
-		}
-		to {
-			width: 0;
-			background: transparent;
-		}
-	}
-	@-moz-keyframes inputHighlighter {
-		from {
-			background: #5264ae;
-		}
-		to {
-			width: 0;
-			background: transparent;
-		}
-	}
-	@keyframes inputHighlighter {
-		from {
-			background: #5264ae;
-		}
-		to {
-			width: 0;
-			background: transparent;
-		}
-	}
-	.watch {
-		margin-right: 50px;
-	}
 	/*  */
 </style>
