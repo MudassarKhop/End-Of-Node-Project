@@ -1,5 +1,4 @@
 <template>
-	<Footer />
 	<section>
 		<div class="filters">
 			<div class="prohead">
@@ -52,15 +51,8 @@
 			</div>
 		</div>
 	</section>
-	<Header />
 </template>
-<script>
-	import Footer from "@/components/footer.vue";
-	import Header from "@/components/header.vue";
-	export default {
-		components: { Footer, Header },
-	};
-</script>
+<script></script>
 <style scoped>
 	section {
 		height: 86vh;

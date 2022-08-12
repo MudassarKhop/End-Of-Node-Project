@@ -1,6 +1,6 @@
 <template>
 	<div class="footer1">
-		<img
+		<!-- <img
 			height="165px"
 			width="265px"
 			src="https://i.postimg.cc/sgCRKW7V/pngwing-com-11.png"
@@ -47,7 +47,7 @@
 			width="125px"
 			src="https://i.postimg.cc/cJNC4jjQ/tag-heuer-logo.png"
 			alt=""
-		/>
+		/> -->
 	</div>
 	<div class="footer2">
 		<div id="foot">
@@ -255,7 +255,7 @@
 	}
 	/* footer medium */
 	.footer1 {
-		height: 10vh;
+		height: 4vh;
 		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
@@ -263,6 +263,9 @@
 		justify-content: center;
 		align-items: center;
 		padding: 10px;
+		border-top: 1px solid #b1b942;
+		border-right: 1px solid #b1b942;
+		border-left: 1px solid #b1b942;
 	}
 	.footer1 div {
 		display: flex;
@@ -285,6 +288,8 @@
 		align-items: center;
 		padding-top: 60px;
 		gap: 30px;
+		border-right: 1px solid #b1b942;
+		border-left: 1px solid #b1b942;
 	}
 	#foot {
 		width: 30%;
@@ -361,6 +366,9 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		border-right: 1px solid #b1b942;
+		border-left: 1px solid #b1b942;
+		border-bottom: 2px solid #b1b942;
 	}
 	.footer3 p {
 		color: white;

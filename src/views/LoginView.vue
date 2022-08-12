@@ -1,6 +1,5 @@
 <template>
 	<section>
-		<Footer />
 		<div class="section">
 			<div class="register">
 				<form>
@@ -42,15 +41,8 @@
 			</div>
 		</div>
 	</section>
-	<Header />
 </template>
-<script>
-	import Footer from "../components/footer.vue";
-	import Header from "@/components/header.vue";
-	export default {
-		components: { Footer, Header },
-	};
-</script>
+<script></script>
 <style scoped>
 	section {
 		min-height: 87vh;

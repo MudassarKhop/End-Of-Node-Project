@@ -1,6 +1,5 @@
 <template>
 	<section>
-		<Footer />
 		<div class="section">
 			<div class="contact">
 				<div class="map1">
@@ -48,18 +47,9 @@
 			</div>
 		</div>
 	</section>
-	<Header />
 </template>
-<script>
-	import Footer from "@/components/footer.vue";
-	import Header from "@/components/header.vue";
-	export default {
-		components: { Footer, Header },
-	};
-</script>
+<script></script>
 <style scoped>
-	section {
-	}
 	.section {
 		height: 87vh;
 		background-color: #131312;
