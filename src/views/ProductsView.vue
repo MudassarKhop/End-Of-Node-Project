@@ -62,7 +62,7 @@
 		padding: 20px;
 		height: 100%;
 		width: 20%;
-		background-color: #192434;
+		background-color: #040f0f;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
@@ -83,7 +83,7 @@
 		width: 250px;
 		height: 35px;
 		border-radius: 9px;
-		background-color: #142842;
+		background-color: #183c38;
 		color: white;
 		padding: 5px;
 		border: thin solid #b1b942;
