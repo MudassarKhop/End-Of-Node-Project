@@ -2,17 +2,6 @@
 	<section>
 		<div class="section">
 			<div class="contact">
-				<div class="map1">
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44180.36354473791!2d6.144088549999999!3d46.2050295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c650693d0e2eb%3A0xa0b695357b0bbc39!2sGeneva%2C%20Switzerland!5e0!3m2!1sen!2sza!4v1660211927966!5m2!1sen!2sza"
-						width="603"
-						height="523"
-						style="border: 0"
-						allowfullscreen=""
-						loading="eager"
-						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
-				</div>
 				<div class="form2">
 					<form>
 						<h1>Contact <span>Us</span></h1>
@@ -44,6 +33,18 @@
 						<button class="btn text-light">Sign Up</button>
 					</form>
 				</div>
+
+				<div class="map1">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44180.36354473791!2d6.144088549999999!3d46.2050295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c650693d0e2eb%3A0xa0b695357b0bbc39!2sGeneva%2C%20Switzerland!5e0!3m2!1sen!2sza!4v1660211927966!5m2!1sen!2sza"
+						width="603"
+						height="523"
+						style="border: 0"
+						allowfullscreen=""
+						loading="eager"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -65,6 +66,11 @@
 	}
 	.btn {
 		border: 2px solid #b1b942;
+		background-color: #183c38;
+	}
+	.btn:hover {
+		background-color: #183c3873;
+		transition: 0.6s;
 	}
 	.contact {
 		display: flex;
@@ -74,7 +80,8 @@
 		width: 80%;
 		height: 80%;
 		background-color: #040f0f;
-		box-shadow: 3px 3px 3px 1px rgba(41, 40, 40, 0.2);
+		border: 1px solid #b1b942;
+		box-shadow: 50px 50px 100px #080807, -50px -50px 100px #1e1e1d;
 	}
 	.map1 {
 		width: 603px;
@@ -210,12 +217,14 @@
 		color: white;
 		margin-bottom: 0;
 		text-shadow: 3px 3px black;
+		text-align: center;
 	}
 	p {
-		font-family: "Cinzel Decorative", cursive;
+		font-family: "Cormorant SC", serif;
 		margin-top: none;
-		font-size: 15px;
+		font-size: 19px;
 		color: white;
+		text-align: center;
 	}
 	span {
 		font-family: Maron;

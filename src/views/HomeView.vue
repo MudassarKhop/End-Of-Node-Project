@@ -33,6 +33,9 @@
 	<section id="about" class="about">
 		<div id="adiv">
 			<h1 id="ah1">About <span>Us</span></h1>
+			<p>
+				Past, Present. This is how we started at the bottom and reached the top.
+			</p>
 		</div>
 
 		<div class="mother">
@@ -46,19 +49,6 @@
 					elit. Incidunt aspernatur sunt inventore a totam ipsam cum labore?
 					Velit perspiciatis molestiae blanditiis impedit ipsa facere sapiente
 					itaque asperiores cum? Animi, quas.
-				</p>
-				<p>
-					<i class="fa-solid fa-chevron-right"></i>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, quis
-					unde aliquid in doloremque laborum, vitae facere illo facilis rerum,
-					error dolore impedit eveniet porro atque quod et suscipit nesciunt?
-				</p>
-				<p>
-					<i class="fa-solid fa-chevron-right"></i>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-					magni libero reiciendis explicabo rerum perspiciatis id culpa sed.
-					Odit eos laboriosam obcaecati libero corporis, odio debitis hic
-					commodi quos temporibus!
 				</p>
 			</div>
 			<div class="son2">
@@ -117,7 +107,70 @@
 			</div>
 		</div>
 	</section>
-	<section id="quick"></section>
+	<section id="quick">
+		<div id="qdiv">
+			<h1>Flash <span>Sale</span></h1>
+			<p>Premium jewellery at reduced prices for the next 24 hours.</p>
+		</div>
+		<div class="mother">
+			<div id="flashcards">
+				<div id="card3">
+					<img
+						id="cimg3"
+						height="280"
+						width="280"
+						src="https://i.postimg.cc/sXFj12pP/pngegg.png"
+						alt=""
+					/>
+				</div>
+				<div id="card3">
+					<img
+						id="cimg3"
+						height="330"
+						width="230"
+						src="https://i.postimg.cc/tTzNmKTP/pngegg-1.png"
+						alt=""
+					/>
+				</div>
+				<div id="card3">
+					<img
+						id="cimg3"
+						height="270"
+						width="190"
+						src="https://i.postimg.cc/SQWhy102/Seek-Png-com-rolex-watch-png-2812201.png"
+						alt=""
+					/>
+				</div>
+				<div id="card3">
+					<img
+						id="cimg3"
+						height="260"
+						width="175"
+						src="https://i.postimg.cc/TYfXhjGk/Seek-Png-com-rolex-watch-png-7924376.png"
+						alt=""
+					/>
+				</div>
+				<div id="card3">
+					<img
+						id="cimg3"
+						height="280"
+						width="170"
+						src="https://i.postimg.cc/BbrvrXR8/Seek-Png-com-duck-dynasty-beard-png-5772739.png"
+						alt=""
+					/>
+				</div>
+				<div id="card3">
+					<img
+						id="cimg3"
+						height="260"
+						width="160"
+						src="https://i.postimg.cc/FzMbfNCM/Seek-Png-com-black-desert-png-3455060.png"
+						alt=""
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
 </template>
 
 <script></script>
@@ -366,10 +419,16 @@
 	}
 	#adiv {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: start;
 		align-items: center;
+	}
+	#adiv p {
+		text-align: center;
+		color: white;
+		font-family: "Cormorant SC", serif;
+		font-size: 25px;
 	}
 	.mother {
 		display: flex;
@@ -395,6 +454,8 @@
 		color: white;
 		text-shadow: 2px 2px black;
 		padding-bottom: 15px;
+		padding: 20px;
+		text-align: center;
 	}
 	.son2 {
 		height: 500px;
@@ -456,6 +517,7 @@
 		flex-wrap: nowrap;
 		justify-content: center;
 		align-items: center;
+		box-shadow: 18px 18px 36px #080807, -18px -18px 36px #1e1e1d;
 	}
 	#card2 p {
 		color: white;
@@ -532,16 +594,73 @@
 	#card1:hover {
 		box-shadow: 10px 10px 40px #b1b942, -10px -10px 40px #858b37;
 		transition: 2s;
+		border: none;
 	}
 	#card2:hover {
 		box-shadow: 10px 10px 40px #b1b942, -10px -10px 40px #858b37;
 		transition: 2s;
+		border: none;
 	}
 	#iconss {
 		margin-bottom: 5px;
 	}
 	#quick {
-		height: 70vh;
+		height: 80vh;
+		padding: 20px;
 		background-color: #131312;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	#qdiv h1 {
+		font-family: "Aboreto", cursive;
+		font-size: 70px;
+		color: white;
+		margin-bottom: none;
+		text-align: center;
+	}
+	#qdiv p {
+		text-align: center;
+		color: white;
+		font-family: "Cormorant SC", serif;
+		font-size: 25px;
+	}
+	#card3 {
+		height: 300px;
+		width: 200px;
+		background-color: #183c38;
+		border: 1px solid #b1b942;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 27px 27px 54px #080807, -27px -27px 54px #1e1e1d;
+	}
+	#cdiv3 {
+		display: block;
+	}
+	#flashcards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		gap: 25px;
+	}
+	#cimg3 {
+		transform: rotate(30deg);
+		overflow: hidden;
+	}
+	#cimg3:hover {
+		transform: rotate(0deg);
+		transition: 1s;
+	}
+
+	#card3:hover {
+		box-shadow: 5px 5px 10px #b1b942, -5px -5px 10px #858b37;
+		transition: 1s;
+		border: none;
 	}
 </style>

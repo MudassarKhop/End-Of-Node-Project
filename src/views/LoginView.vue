@@ -1,73 +1,56 @@
 <template>
 	<section>
-		<div class="section">
-			<div class="register">
-				<form>
-					<h1>Register <span>Now</span></h1>
-					<p>Join now to gain exclusive benefits.</p>
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Full Name</label>
-					</div>
-
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Email</label>
-					</div>
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Password</label>
-					</div>
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Phone Number</label>
-					</div>
-					<div class="group">
-						<input type="text" required />
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Shipping Address</label>
-					</div>
-					<button class="btn text-light">Sign Up</button>
-				</form>
-			</div>
+		<div class="register">
+			<form>
+				<h1>Signs <span>In</span></h1>
+				<p>Welcome back.</p>
+				<div class="group">
+					<input type="text" required />
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Email</label>
+				</div>
+				<div class="group">
+					<input type="text" required />
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Password</label>
+				</div>
+				<button class="btn text-light">Login</button>
+			</form>
 		</div>
 	</section>
 </template>
 <script></script>
 <style scoped>
 	section {
-		min-height: 87vh;
+		height: 85vh;
 		background-color: #131312;
-	}
-	.section {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		padding: 50px;
 	}
 	.register {
-		min-height: 600px;
+		min-height: 500px;
 		width: 400px;
-		background-color: #183c38;
+		background-color: #040f0f;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		border: 1px solid #b1b942;
+		box-shadow: 50px 50px 100px #080807, -50px -50px 100px #1e1e1d;
 	}
 	.btn {
-		border: 2px solid #b1b942;
+		border: 1px solid #b1b942;
+		background-color: #183c38;
+	}
+	.btn:hover {
+		background-color: #183c3873;
+		transition: 0.6s;
 	}
 	form {
 		display: flex;
@@ -197,12 +180,14 @@
 		color: white;
 		margin-bottom: 0;
 		text-shadow: 3px 3px black;
+		text-align: center;
 	}
 	p {
-		font-family: "Cinzel Decorative", cursive;
+		font-family: "Cormorant SC", serif;
 		margin-top: none;
-		font-size: 15px;
+		font-size: 19px;
 		color: white;
+		text-align: center;
 	}
 	span {
 		font-family: Maron;

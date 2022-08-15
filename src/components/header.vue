@@ -390,6 +390,10 @@
 	#foot3 h1 {
 		margin-bottom: 10px;
 	}
+	#foot3 button:hover {
+		background-color: #183c3873;
+		transition: 0.6s;
+	}
 
 	/*  */
 </style>

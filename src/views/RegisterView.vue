@@ -43,7 +43,7 @@
 <script></script>
 <style scoped>
 	section {
-		height: 87vh;
+		height: 85vh;
 		background-color: #131312;
 		display: flex;
 		flex-direction: row;
@@ -60,10 +60,16 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		border-radius: 5%;
+		border: 1px solid #b1b942;
+		box-shadow: 11px 11px 22px #080807, -11px -11px 22px #1e1e1d;
 	}
 	.btn {
-		border: 2px solid #b1b942;
+		border: 1px solid #b1b942;
+		background-color: #183c38;
+	}
+	.btn:hover {
+		background-color: #183c3873;
+		transition: 0.6s;
 	}
 	form {
 		display: flex;
@@ -193,12 +199,14 @@
 		color: white;
 		margin-bottom: 0;
 		text-shadow: 3px 3px black;
+		text-align: center;
 	}
 	p {
-		font-family: "Cinzel Decorative", cursive;
+		font-family: "Cormorant SC", serif;
 		margin-top: none;
-		font-size: 15px;
+		font-size: 19px;
 		color: white;
+		text-align: center;
 	}
 	span {
 		font-family: Maron;

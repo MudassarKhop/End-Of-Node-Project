@@ -116,7 +116,13 @@
 		letter-spacing: 2px;
 		font-family: "Cinzel Decorative", cursive;
 	}
-
+	.nav a:hover {
+		color: #b1b9429d;
+		transition: 0.4s ease-in-out;
+	}
+	.fa-user:hover {
+		color: #b1b9429d;
+	}
 	.nav a.router-link-exact-active {
 		color: #b1b942;
 	}
