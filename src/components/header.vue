@@ -143,6 +143,7 @@
 		text-align: center;
 		width: 45px;
 		transition: 0.3s;
+		border: 1px solid #b1b942;
 	}
 	.fa-linkedin {
 		font-size: 28px;
@@ -156,6 +157,7 @@
 		text-align: center;
 		width: 45px;
 		transition: 0.3s;
+		border: 1px solid #b1b942;
 	}
 	.fa-google {
 		font-size: 28px;
@@ -169,6 +171,7 @@
 		text-align: center;
 		width: 45px;
 		transition: 0.3s;
+		border: 1px solid #b1b942;
 	}
 	.fa-instagram {
 		font-size: 28px;
@@ -182,6 +185,7 @@
 		text-align: center;
 		width: 45px;
 		transition: 0.3s;
+		border: 1px solid #b1b942;
 	}
 	.fa-twitter {
 		font-size: 28px;
@@ -195,6 +199,7 @@
 		text-align: center;
 		width: 45px;
 		transition: 0.3s;
+		border: 1px solid #b1b942;
 	}
 	.fa-facebook {
 		font-size: 28px;
@@ -207,6 +212,7 @@
 		border-radius: 50%;
 		text-align: center;
 		width: 45px;
+		border: 1px solid #b1b942;
 	}
 	.fa-facebook:hover {
 		background-color: white;
@@ -376,7 +382,7 @@
 	}
 	/* footer big headings */
 	#foot h1 {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	#foot2 h1 {
 		margin-bottom: 20px;

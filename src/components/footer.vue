@@ -103,6 +103,7 @@
 		align-items: center;
 		padding: 10px;
 		background-color: #183c38;
+		border-bottom: 1px solid #b1b942;
 	}
 
 	.nav a {
@@ -320,7 +321,7 @@
 	/* about */
 	.about {
 		height: 100vh;
-		background-color: black;
+		background-color: #131312;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
