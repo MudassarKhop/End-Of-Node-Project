@@ -55,12 +55,12 @@
 <script></script>
 <style scoped>
 	section {
-		height: 86vh;
+		min-height: 86vh;
 		background-color: #131312;
 	}
 	.filters {
 		padding: 20px;
-		height: 100%;
+		min-height: 86vh;
 		width: 20%;
 		background-color: #040f0f;
 		display: flex;
