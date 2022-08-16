@@ -96,8 +96,6 @@ export default createStore({
       fetch("https://joint-ecom.herokuapp.com/products")
         .then((res) => res.json())
         .then((products) => {
-          method="GET",
-          mode= "no-cors",
           context.commit("setProducts", products);
         });
     },
