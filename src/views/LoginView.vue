@@ -20,8 +20,52 @@
 			</form>
 		</div>
 	</section>
+	<section>
+		<div class="register">
+			<form @submit.prevent="login">
+				<h1>Signs <span>In</span></h1>
+				<p>Welcome back.</p>
+				<div class="group">
+					<input type="text" required v-model="email" />
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Email</label>
+				</div>
+				<div class="group">
+					<input type="text" required v-model="psw" />
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label>Password</label>
+				</div>
+				<button class="btn text-light">Login</button>
+			</form>
+		</div>
+	</section>
 </template>
-<script></script>
+<script>
+	export default {
+		data() {
+			return {
+				email: "",
+				psw: "",
+			};
+		},
+
+		computed: {
+			user() {
+				return this.$store.state.user;
+			},
+		},
+		methods: {
+			login() {
+				this.$store.dispatch("login", {
+					email: this.email,
+					password: this.psw,
+				});
+			},
+		},
+	};
+</script>
 <style scoped>
 	section {
 		height: 85vh;
@@ -75,7 +119,6 @@
 	input:focus {
 		outline: none;
 	}
-
 	/* LABEL ======================================= */
 	label {
 		color: #999;
@@ -169,6 +212,53 @@
 	@keyframes inputHighlighter {
 		from {
 			background: #b1b942;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	h1 {
+		font-family: "Aboreto", cursive;
+		font-size: 35px;
+		color: white;
+		margin-bottom: 0;
+		text-shadow: 3px 3px black;
+		text-align: center;
+	}
+	p {
+		font-family: "Cormorant SC", serif;
+		margin-top: none;
+		font-size: 19px;
+		color: white;
+		text-align: center;
+	}
+	span {
+		font-family: Maron;
+		color: #b1b942;
+	}
+	/* ANIMATIONS ================ */
+	@-webkit-keyframes inputHighlighter {
+		from {
+			background: #5264ae;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	@-moz-keyframes inputHighlighter {
+		from {
+			background: #5264ae;
+		}
+		to {
+			width: 0;
+			background: transparent;
+		}
+	}
+	@keyframes inputHighlighter {
+		from {
+			background: #5264ae;
 		}
 		to {
 			width: 0;

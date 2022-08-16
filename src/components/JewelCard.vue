@@ -1,21 +1,16 @@
 <template>
 	<div id="card3">
 		<div id="pic">
-			<img
-				id="cimg3"
-				height="425"
-				width="245"
-				src="https://i.postimg.cc/sXFj12pP/pngegg.png"
-				alt=""
-			/>
+			<img id="cimg3" height="200" width="200" :src="product.url" alt="" />
 		</div>
 		<router-link to="/singleview">
 			<div id="name">
-				<h1>Patek Philippe Nautilus 3920</h1>
+				<h1>{{ product.name }}</h1>
+				<h4>{{ product.brand }}</h4>
 			</div>
 		</router-link>
 		<div id="price">
-			<h3>$32999.00</h3>
+			<h3>${{ product.price }}</h3>
 		</div>
 		<!-- Button trigger modal -->
 		<button
@@ -53,18 +48,17 @@
 						<div id="gm">
 							<div id="twin1">
 								<img
-									id="img2"
-									src="https://i.postimg.cc/sXFj12pP/pngegg.png"
+									id="cimg3"
+									height="200"
+									width="200"
+									:src="product.url"
 									alt=""
 								/>
 							</div>
 							<div id="twin2">
-								<h1>Watch Name</h1>
+								<h1>{{ product.name }}</h1>
 								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-									voluptate facilis atque aspernatur repellat? Omnis officia
-									maiores, perferendis saepe beatae nobis suscipit culpa non
-									provident a consequatur illum, dicta nesciunt!
+									{{ product.description }}
 								</p>
 								<div class="d-flex">
 									<a class="btn text-light">Add To Cart</a>
@@ -82,7 +76,7 @@
 	</div>
 </template>
 <script>
-	export default {};
+	export default { props: ["product"] };
 </script>
 <style scoped>
 	#card3 {
@@ -114,9 +108,9 @@
 		transition: 1s;
 		border: none;
 	}
-	#cimg3 {
+	/* #cimg3 {
 		transform: rotate(90deg);
-	}
+	} */
 	#name {
 		text-align: center;
 		padding: 10px;

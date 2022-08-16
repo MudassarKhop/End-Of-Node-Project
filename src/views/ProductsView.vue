@@ -52,15 +52,38 @@
 				</div>
 			</div>
 			<div class="products">
-				<JewelCard />
+				<JewelCard
+					v-for="product in products"
+					:key="product.id"
+					:product="product"
+				/>
 			</div>
 		</div>
+		<!-- <ProductCard
+			v-for="product in products"
+			:key="product.id"
+			:product="product"
+		/> -->
 	</section>
 </template>
 <script>
+	// import ProductCard from "@/components/ProductCard.vue";
 	import JewelCard from "@/components/JewelCard.vue";
 	export default {
 		components: { JewelCard },
+		mounted() {
+			this.$store.dispatch("getProducts");
+			// fetch("https://joint-ecom.herokuapp.com/products")
+			//   .then((res) => res.json())
+			//   .then((data) => (this.products = data));
+		},
+		computed: {
+			products() {
+				return this.$store.state.products;
+				//Returning the current state of the store
+				//Must have when looping through properties
+			},
+		},
 	};
 </script>
 <style scoped>
@@ -73,6 +96,9 @@
 		flex-direction: row;
 	}
 	.products {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
 		padding: 20px;
 		width: 80%;
 	}

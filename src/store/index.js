@@ -8,6 +8,7 @@ export default createStore({
     cart: [],
   },
   mutations: {
+    // Product
     setProducts: (state, products) => {
       state.products = products;
     },
@@ -15,37 +16,82 @@ export default createStore({
     setSingleProduct: (state, product) => {
       state.product = product;
     },
+
+    // Cart
+
     updateCart: (state, product) => {
       state.cart.push(product);
     },
-    setUser: (state, user) => {
-      state.user = user;
-    },
+
     removeFromCart: (state, cart) => {
       state.cart = cart;
     },
 
-    sortByPrice: (state) => {
-      state.items.sort((a, b) => {
-        return a.price - b.price; //like vanilla javascript, this is how you make a sort function
-      });
-      if (!state.asc) {
-        //if the asc is not true, it reverses the current order of the list
-        state.items.reverse(); // reverts the order
-      }
-      state.asc = !state.asc; //states that when the function is run, asc becomes false instead of true
+    // User
+
+    setUser: (state, user) => {
+      state.user = user;
     },
+
+    // Other
+
+    // sortByPrice: (state) => {
+    //   state.products.sort((a, b) => {
+    //     return a.price - b.price; //like vanilla javascript, this is how you make a sort function
+    //   });
+    //   if (!state.asc) {
+    //     //if the asc is not true, it reverses the current order of the list
+    //     state.products.reverse(); // reverts the order
+    //   }
+    //   state.asc = !state.asc; //states that when the function is run, asc becomes false instead of true
+    // },
   },
   actions: {
-    //     login: async (context, payload) => {
-    //       fetch
-    // }
+    // Login and Register
+    // register: async (context, payload) => {
+    //   const response = await fetch(
+    //     `https://joint-ecom.herokuapp.com/users/register`,
+    //     {
+    //       method: "POST",
+    //       body: JSON.stringify(payload),
+    //       headers: {
+    //         "Content-type": "application/json; charset=UTF-8",
+    //       },
+    //     }
+    //   );
+    // },
 
-    getProdcuts: async (context) => {
+    login: async (context, payload) => {
+      fetch("https://joint-ecom.herokuapp.com/users/login", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      });
+      // const userData = await response.json(); //stores the response from the database
+      // if (!userData.length)
+      //   return alert("No user has been found with these credentials.");
+      context.commit("setUser", payload);
+      console.log(payload);
+    },
+
+    // User
+    getUser: async (context) => {
+      fetch("https://joint-ecom.herokuapp.com/users/" + id)
+        .then((res) => res.json())
+        .then((user) => {
+          context.commit(setUser, user);
+        });
+    },
+
+    // Products
+    getProducts: async (context) => {
       fetch("https://joint-ecom.herokuapp.com/products")
         .then((res) => res.json())
         .then((products) => {
-          context.commit(setProducts, products);
+          context.commit("setProducts", products);
         });
     },
 
@@ -69,34 +115,57 @@ export default createStore({
         });
     },
 
-    editItem: async (context, item) => {
-      fetch("http://localhost:3000/items/" + id, {
+    editProduct: async (context, product) => {
+      fetch("https://joint-ecom.herokuapp.com/products/" + id, {
         method: "PUT",
-        body: JSON.stringify(item),
+        body: JSON.stringify(product),
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
       })
         .then((response) => response.json())
         .then(() => {
-          context.dispatch("getItems", item);
+          context.dispatch("getProducts", product);
         });
     },
 
     deleteItem: async (context, id) => {
-      fetch("http://localhost:3000/items/" + id, {
+      fetch("https://joint-ecom.herokuapp.com/products/" + id, {
         method: "DELETE",
       }).then(() => {
         context.dispatch("getItems");
       });
     },
-    addToCart: async (context, id) => {
-      this.state.cart.item.push(id);
-      context.dispatch("updateCart", this.state.cart);
+
+    // Cart
+    getCart: async (context) => {
+      fetch("https://joint-ecom.herokuapp.com/users/" + id + "/cart")
+        .then((res) => res.json())
+        .then((product) => {
+          context.commit("updateCart", product);
+        });
     },
+
+    addToCart: async (context, id) => {
+      fetch("https://joint-ecom.herokuapp.com/users/" + id + "/cart", {
+        method: "POST",
+        body: JSON.stringify(product),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then(() => {
+          context.dispatch("getProduct", product);
+        });
+    },
+
     deleteFromCart: async (context, id) => {
-      const newCart = context.state.cart.filter((item) => item.id != id);
-      context.commit("removeFromCart", newCart);
+      fetch("https://joint-ecom.herokuapp.com/users/" + id + "/cart/" + id, {
+        method: "DELETE",
+      }).then(() => {
+        context.dispatch("getItems");
+      });
     },
   },
 });
