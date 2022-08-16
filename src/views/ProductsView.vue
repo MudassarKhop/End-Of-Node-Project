@@ -70,7 +70,7 @@
 	// import ProductCard from "@/components/ProductCard.vue";
 	import JewelCard from "@/components/JewelCard.vue";
 	export default {
-		components: { JewelCard },
+		components: {  JewelCard },
 		mounted() {
 			this.$store.dispatch("getProducts");
 			// fetch("https://joint-ecom.herokuapp.com/products")

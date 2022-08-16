@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<!-- <section>
 		<div class="register">
 			<form>
 				<h1>Signs <span>In</span></h1>
@@ -19,7 +19,7 @@
 				<button class="btn text-light">Login</button>
 			</form>
 		</div>
-	</section>
+	</section> -->
 	<section>
 		<div class="register">
 			<form @submit.prevent="login">

@@ -76,7 +76,9 @@
 	</div>
 </template>
 <script>
-	export default { props: ["product"] };
+	export default {
+		 props: ["product"],
+		 };
 </script>
 <style scoped>
 	#card3 {

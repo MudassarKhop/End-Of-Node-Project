@@ -69,12 +69,17 @@ export default createStore({
         headers: {
           "Content-type": "application/json; charset=UTF-8",
         },
-      });
+      })
       // const userData = await response.json(); //stores the response from the database
       // if (!userData.length)
       //   return alert("No user has been found with these credentials.");
-      context.commit("setUser", payload);
-      console.log(payload);
+      .then((res)=> res.json())
+      .then((data)=>{
+        console.log(payload);
+        localStorage.setItem("token", JSON.stringify(data))
+        context.commit("setUser", payload);
+      })
+
     },
 
     // User
