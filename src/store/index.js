@@ -5,7 +5,7 @@ export default createStore({
     products: null,
     product: null,
     user: null,
-    cart: null,
+    cart: [],
   },
   mutations: {
     // Product
@@ -48,39 +48,38 @@ export default createStore({
   },
   actions: {
     // Login and Register
-    register: async (context, payload) => {
-      const response = await fetch(
-        `https://joint-ecom.herokuapp.com/user/register`,
-        {
-          method: "POST",
-          body: JSON.stringify(payload),
-          headers: {
-            "Content-type": "application/json; charset=UTF-8",
-          },
-        }
-      );
-    },
+    // register: async (context, payload) => {
+    //   const response = await fetch(
+    //     `https://joint-ecom.herokuapp.com/users/register`,
+    //     {
+    //       method: "POST",
+    //       body: JSON.stringify(payload),
+    //       headers: {
+    //         "Content-type": "application/json; charset=UTF-8",
+    //       },
+    //     }
+    //   );
+    // },
 
     login: async (context, payload) => {
-      const response = await fetch(
-        `https://joint-ecom.herokuapp.com/user/login`,
-        {
-          method: "POST",
-          body: JSON.stringify(payload),
-          headers: {
-            "Content-type": "application/json; charset=UTF-8",
-          },
-        }
-      );
-      const userData = await response.json(); //stores the response from the database
-      if (!userData.length)
-        return alert("No user has been found with these credentials.");
-      context.commit("setUser", userData[0]);
+      fetch("https://joint-ecom.herokuapp.com/users/login", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      });
+      // const userData = await response.json(); //stores the response from the database
+      // if (!userData.length)
+      //   return alert("No user has been found with these credentials.");
+      context.commit("setUser", payload);
+      console.log(payload);
     },
 
     // User
     getUser: async (context) => {
-      fetch("https://joint-ecom.herokuapp.com/user/" + id)
+      fetch("https://joint-ecom.herokuapp.com/users/" + id)
         .then((res) => res.json())
         .then((user) => {
           context.commit(setUser, user);
@@ -140,7 +139,7 @@ export default createStore({
 
     // Cart
     getCart: async (context) => {
-      fetch("https://joint-ecom.herokuapp.com/user/" + id + "/cart")
+      fetch("https://joint-ecom.herokuapp.com/users/" + id + "/cart")
         .then((res) => res.json())
         .then((product) => {
           context.commit("updateCart", product);
