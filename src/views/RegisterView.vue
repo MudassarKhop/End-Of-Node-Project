@@ -66,6 +66,7 @@
 	.btn {
 		border: 1px solid #b1b942;
 		background-color: #183c38;
+		transition: 0.6s;
 	}
 	.btn:hover {
 		background-color: #183c3873;
@@ -168,7 +169,7 @@
 	/* ANIMATIONS ================ */
 	@-webkit-keyframes inputHighlighter {
 		from {
-			background: #5264ae;
+			background: #b1b942;
 		}
 		to {
 			width: 0;
@@ -177,7 +178,7 @@
 	}
 	@-moz-keyframes inputHighlighter {
 		from {
-			background: #5264ae;
+			background: #b1b942;
 		}
 		to {
 			width: 0;
@@ -186,7 +187,7 @@
 	}
 	@keyframes inputHighlighter {
 		from {
-			background: #5264ae;
+			background: #b1b942;
 		}
 		to {
 			width: 0;

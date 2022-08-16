@@ -41,7 +41,6 @@
 		<div class="mother">
 			<div class="son1">
 				<p>
-					<i class="fa-solid fa-chevron-right"></i>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
 					impedit harum tempore minus, ab asperiores soluta temporibus, labore
 					corrupti esse voluptatibus explicabo, cumque voluptates aut amet at.
@@ -55,6 +54,7 @@
 				<div id="card1">
 					<img
 						id="cimg"
+						class="img-fluid"
 						src="https://i.postimg.cc/1XXTxgM0/1113519.jpg"
 						alt=""
 					/>
@@ -81,6 +81,7 @@
 				<div id="card2">
 					<img
 						id="cimg"
+						class="img-fluid"
 						src="https://i.postimg.cc/KzfShhbb/733995.jpg"
 						alt=""
 					/>
@@ -266,6 +267,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-linkedin {
 		font-size: 28px;
@@ -280,6 +282,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-google {
 		font-size: 28px;
@@ -294,6 +297,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-github {
 		font-size: 28px;
@@ -308,6 +312,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-instagram {
 		font-size: 28px;
@@ -322,6 +327,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-twitter {
 		font-size: 28px;
@@ -336,6 +342,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-facebook {
 		font-size: 28px;
@@ -349,6 +356,7 @@
 		text-align: center;
 		width: 45px;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-facebook:hover {
 		background-color: white;
@@ -450,11 +458,11 @@
 	}
 	.son1 p {
 		font-family: "Aboreto", cursive;
-		font-size: 17px;
+		font-size: 20px;
 		color: white;
 		text-shadow: 2px 2px black;
 		padding-bottom: 15px;
-		padding: 20px;
+		padding: 100px;
 		text-align: center;
 	}
 	.son2 {
@@ -473,6 +481,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		transition: 2s;
 	}
 	#card1 p {
 		text-align: center;
@@ -496,7 +505,10 @@
 	}
 	#cimg {
 		width: 100%;
-		height: 38%;
+		height: 192px;
+	}
+	#card1:hover #cimg {
+		height: 194px;
 	}
 	#cimg2 {
 		border-radius: 50%;
@@ -518,6 +530,7 @@
 		justify-content: center;
 		align-items: center;
 		box-shadow: 18px 18px 36px #080807, -18px -18px 36px #1e1e1d;
+		transition: 2s;
 	}
 	#card2 p {
 		color: white;
@@ -637,6 +650,7 @@
 		justify-content: center;
 		align-items: center;
 		box-shadow: 27px 27px 54px #080807, -27px -27px 54px #1e1e1d;
+		transition: 2s;
 	}
 	#cdiv3 {
 		display: block;
@@ -650,8 +664,10 @@
 		gap: 25px;
 	}
 	#cimg3 {
-		transform: rotate(30deg);
+		transform: rotate(20deg);
+		/* transform: skewY(5deg); */
 		overflow: hidden;
+		transition: 1s;
 	}
 	#cimg3:hover {
 		transform: rotate(0deg);

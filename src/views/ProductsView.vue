@@ -1,62 +1,80 @@
 <template>
 	<section>
-		<div class="filters">
-			<div class="prohead">
-				<h1>Find Your <span>Watch</span></h1>
-				<p>Use the filters below to find the right piece for you.</p>
-			</div>
-			<div class="filters2">
-				<div class="group">
-					<input type="text" required />
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Search</label>
+		<div class="items">
+			<div class="filters">
+				<div class="prohead">
+					<h1>Find Your <span>Watch</span></h1>
+					<p>Use the filters below to find the right piece for you.</p>
 				</div>
-				<select name="Product Type" id="">
-					<option value="Product Type">Product Type</option>
-					<option value="Jewellery">Jewellery</option>
-					<option value="Watches">Watches</option>
-				</select>
-				<select name="Price" id="">
-					<option value="price">Price</option>
-					<option value="Asc">Ascending</option>
-					<option value="Dec">Decending</option>
-				</select>
-				<select name="Condition" id="">
-					<option value="Condition">Conditon</option>
-					<option value="new">Brand New</option>
-					<option value="pre-owned">Pre-Owned</option>
-				</select>
-				<select name="Type" id="">
-					<option value="Type">Movement</option>
-					<option value="automatic">Automatic</option>
-					<option value="quartz">Quartz</option>
-				</select>
-				<select name="Gender" id="">
-					<option value="Gender">Gender</option>
-					<option value="malew">Male Watches</option>
-					<option value="femalew">Female Watches</option>
-					<option value="malej">Male Jewellery</option>
-					<option value="femalej">Female Jewellery</option>
-				</select>
-				<select name="Brand" id="">
-					<option value="Brand">Brand</option>
-					<option value="Rolex">Rolex</option>
-					<option value="Audemars Piguet">Audemars Piguet</option>
-					<option value="Patek Philippe">Patek Philippe</option>
-					<option value="Richard Mille">Richard Mille</option>
-					<option value="Jaeger-leCoultre">Jaeger-leCoultre</option>
-					<option value=""></option>
-				</select>
+				<div class="filters2">
+					<div class="group">
+						<input type="text" required />
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Search</label>
+					</div>
+					<select name="Product Type" id="">
+						<option value="Product Type">Product Type</option>
+						<option value="Jewellery">Jewellery</option>
+						<option value="Watches">Watches</option>
+					</select>
+					<select name="Price" id="">
+						<option value="price">Price</option>
+						<option value="Asc">Ascending</option>
+						<option value="Dec">Decending</option>
+					</select>
+					<select name="Condition" id="">
+						<option value="Condition">Conditon</option>
+						<option value="new">Brand New</option>
+						<option value="pre-owned">Pre-Owned</option>
+					</select>
+					<select name="Type" id="">
+						<option value="Type">Movement</option>
+						<option value="automatic">Automatic</option>
+						<option value="quartz">Quartz</option>
+					</select>
+					<select name="Gender" id="">
+						<option value="Gender">Gender</option>
+						<option value="malew">Male Watches</option>
+						<option value="femalew">Female Watches</option>
+						<option value="malej">Male Jewellery</option>
+						<option value="femalej">Female Jewellery</option>
+					</select>
+					<select name="Brand" id="">
+						<option value="Brand">Brand</option>
+						<option value="Rolex">Rolex</option>
+						<option value="Audemars Piguet">Audemars Piguet</option>
+						<option value="Patek Philippe">Patek Philippe</option>
+						<option value="Richard Mille">Richard Mille</option>
+						<option value="Jaeger-leCoultre">Jaeger-leCoultre</option>
+						<option value=""></option>
+					</select>
+				</div>
+			</div>
+			<div class="products">
+				<JewelCard />
 			</div>
 		</div>
 	</section>
 </template>
-<script></script>
+<script>
+	import JewelCard from "@/components/JewelCard.vue";
+	export default {
+		components: { JewelCard },
+	};
+</script>
 <style scoped>
 	section {
 		min-height: 86vh;
 		background-color: #131312;
+	}
+	.items {
+		display: flex;
+		flex-direction: row;
+	}
+	.products {
+		padding: 20px;
+		width: 80%;
 	}
 	.filters {
 		padding: 20px;
@@ -69,6 +87,7 @@
 		justify-content: center;
 		align-items: center;
 		gap: 25px;
+		border-right: 1px solid #b1b942;
 	}
 	.filters2 {
 		display: flex;
@@ -94,6 +113,7 @@
 		color: white;
 		margin-bottom: 0;
 		text-shadow: 2px 2px black;
+		text-align: center;
 	}
 	p {
 		font-family: "Cormorant SC", serif;
@@ -102,6 +122,7 @@
 		color: white;
 		margin-bottom: 0;
 		line-height: 20px;
+		text-align: center;
 	}
 	span {
 		color: #b1b942;

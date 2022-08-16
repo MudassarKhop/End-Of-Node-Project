@@ -40,6 +40,12 @@ const routes = [
 		component: () =>
 			import(/* webpackChunkName: "about" */ "../views/RegisterView.vue"),
 	},
+	{
+		path: "/singleview",
+		name: "singleview",
+		component: () =>
+			import(/* webpackChunkName: "about" */ "../views/SingleView.vue"),
+	},
 ];
 
 const router = createRouter({

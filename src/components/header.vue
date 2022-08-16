@@ -144,6 +144,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-linkedin {
 		font-size: 28px;
@@ -158,6 +159,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-google {
 		font-size: 28px;
@@ -172,6 +174,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-instagram {
 		font-size: 28px;
@@ -186,6 +189,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-twitter {
 		font-size: 28px;
@@ -200,6 +204,7 @@
 		width: 45px;
 		transition: 0.3s;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-facebook {
 		font-size: 28px;
@@ -213,6 +218,7 @@
 		text-align: center;
 		width: 45px;
 		border: 1px solid #b1b942;
+		transition: 1s;
 	}
 	.fa-facebook:hover {
 		background-color: white;
@@ -362,6 +368,7 @@
 		padding: 5px;
 		border: 1px solid #b1b942;
 		width: 90px;
+		transition: 1s;
 	}
 	/* footer small */
 	.footer3 {
