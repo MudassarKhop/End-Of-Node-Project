@@ -1,6 +1,5 @@
 <template>
-	<div id="things">
-		<div class="contact">
+<section id="head">
 			<div class="start">
 				<p class="number"><i class="fa-solid fa-phone"></i> 5555-444-333</p>
 				<p class="times"><i class="fa-solid fa-clock"></i> 8AM-10PM</p>
@@ -14,8 +13,7 @@
 				</p>
 				<p class="cart"><i class="fa-solid fa-cart-arrow-down"></i> Cart</p>
 			</div>
-		</div>
-	</div>
+</section>
 	<div class="nav">
 		<router-link to="/">Home</router-link>
 		<a href="/#about">About</a>
@@ -37,63 +35,67 @@
 	@import url("https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap");
 	/* header */
 
-	#things {
-		margin-bottom: 20px;
-		background-color: black;
-	}
-	.contact {
-		height: 3vh;
+
+	#head {
+		min-height: 3vh;
 		background-color: #131312;
-		padding: 10px;
+
 		display: flex;
 		flex-direction: row;
+		/* flex-wrap: nowrap;
+		justify-content: center;
+		align-content: center; */
+		margin-bottom: 20px;
 	}
 	.number {
-		padding-left: 35px;
-		margin: auto;
+	
 		/* margin-left: 52px; */
 		color: white;
 		font-size: 17px;
 		font-family: "Cinzel Decorative", cursive;
 	}
 	.times {
-		padding-left: 25px;
-		margin: auto;
+
 		color: white;
 		font-size: 17px;
 		font-family: "Cinzel Decorative", cursive;
 		letter-spacing: 1px;
+		padding-left: 10px;
 	}
 
 	.start {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: start;
-		align-items: flex-start;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: start;
+align-content: center;
+width: 50%;
+padding-top:10px;
+padding-left: 50px;
 	}
 	.end {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: end;
-		align-items: flex-end;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: end;
+align-items: center;
+width: 50%;
+padding-top:10px;
+padding-right: 50px;
 	}
 	.user {
-		margin: auto;
-		margin-left: 975px;
+
 		color: white;
 		font-size: 17px;
 		font-family: "Cinzel Decorative", cursive;
 		letter-spacing: 1px;
 	}
 	.cart {
-		margin: auto;
-		margin-left: 25px;
 		color: white;
 		font-size: 17px;
 		font-family: "Cinzel Decorative", cursive;
 		letter-spacing: 1px;
+		padding-left: 10px;
 	}
 	.nav {
 		display: flex;
@@ -580,4 +582,27 @@
 		margin-right: 10px;
 	}
 	/*  */
+	@media only screen and (max-width: 564px) {
+		.end{
+
+			padding-right: 10px;
+		}
+		.start{
+
+			padding-left: 10px;
+		}
+	.user {
+		font-size: 15px;
+
+	}
+	.cart {
+		font-size: 15px;
+	}
+		.number {
+		display: none;
+	}
+	.times {
+		display: none;
+	}
+	}
 </style>
