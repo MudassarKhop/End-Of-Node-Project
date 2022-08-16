@@ -1,98 +1,93 @@
 <template>
-	<section id="product">
-		<div id="pdiv">
-			<div class="daughter1">
-				<div
-					id="carouselExampleIndicators"
-					class="carousel slide"
-					data-bs-ride="true"
+	<div id="pdiv">
+		<div class="daughter1">
+			<div
+				id="carouselExampleIndicators"
+				class="carousel slide"
+				data-bs-ride="true"
+			>
+				<div class="carousel-indicators">
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="0"
+						class="active"
+						aria-current="true"
+						aria-label="Slide 1"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="1"
+						aria-label="Slide 2"
+					></button>
+					<button
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide-to="2"
+						aria-label="Slide 3"
+					></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="https://i.postimg.cc/TYfXhjGk/Seek-Png-com-rolex-watch-png-7924376.png"
+							class="d-block"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							src="https://i.postimg.cc/BbrvrXR8/Seek-Png-com-duck-dynasty-beard-png-5772739.png"
+							class="d-block"
+							alt="..."
+						/>
+					</div>
+					<div class="carousel-item">
+						<img
+							id="cimg3"
+							height="200"
+							width="200"
+							:src="product.url"
+							alt=""
+						/>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev"
 				>
-					<div class="carousel-indicators">
-						<button
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide-to="0"
-							class="active"
-							aria-current="true"
-							aria-label="Slide 1"
-						></button>
-						<button
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide-to="1"
-							aria-label="Slide 2"
-						></button>
-						<button
-							type="button"
-							data-bs-target="#carouselExampleIndicators"
-							data-bs-slide-to="2"
-							aria-label="Slide 3"
-						></button>
-					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img
-								src="https://i.postimg.cc/TYfXhjGk/Seek-Png-com-rolex-watch-png-7924376.png"
-								class="d-block"
-								alt="..."
-							/>
-						</div>
-						<div class="carousel-item">
-							<img
-								src="https://i.postimg.cc/BbrvrXR8/Seek-Png-com-duck-dynasty-beard-png-5772739.png"
-								class="d-block"
-								alt="..."
-							/>
-						</div>
-						<div class="carousel-item">
-							<img
-								src="https://i.postimg.cc/FzMbfNCM/Seek-Png-com-black-desert-png-3455060.png"
-								class="d-block"
-								alt="..."
-							/>
-						</div>
-					</div>
-					<button
-						class="carousel-control-prev"
-						type="button"
-						data-bs-target="#carouselExampleIndicators"
-						data-bs-slide="prev"
-					>
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button
-						class="carousel-control-next"
-						type="button"
-						data-bs-target="#carouselExampleIndicators"
-						data-bs-slide="next"
-					>
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-			</div>
-			<div class="daughter2">
-				<h1>TITLE</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-					harum temporibus velit quam. Dolorem unde, libero consectetur debitis
-					quis cum fuga provident omnis mollitia! Atque pariatur autem
-					perspiciatis tempora facere?
-				</p>
-				<h3>$$$</h3>
-				<div class="d-flex">
-					<button class="btn text-light border border-light">
-						Add To Cart
-					</button>
-					<button class="btn text-light border border-light">Check Out</button>
-				</div>
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next"
+				>
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
 		</div>
-	</section>
+		<div class="daughter2">
+			<h1>{{ product.name }}</h1>
+			<p>
+				{{ product.description }}
+			</p>
+			<h3>${{ product.price }}</h3>
+			<div class="d-flex">
+				<button class="btn text-light border border-light">Add To Cart</button>
+				<button class="btn text-light border border-light">Check Out</button>
+			</div>
+		</div>
+	</div>
 </template>
 <script>
-	export default {};
+	export default { props: ["product"] };
 </script>
 <style scoped>
 	#product {
