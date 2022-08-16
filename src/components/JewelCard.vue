@@ -3,7 +3,7 @@
 		<div id="pic">
 			<img id="cimg3" height="200" width="200" :src="product.url" alt="" />
 		</div>
-		<router-link to="/singleview">
+		<router-link :to="{name: 'SingleView', params: {id:product.product_id} }">
 			<div id="name">
 				<h1>{{ product.name }}</h1>
 				<h4>{{ product.brand }}</h4>

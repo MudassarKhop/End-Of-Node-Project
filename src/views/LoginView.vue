@@ -51,6 +51,10 @@
 			};
 		},
 
+mounted(){
+	this.$store.dispatch("login")
+},
+
 		computed: {
 			user() {
 				return this.$store.state.user;

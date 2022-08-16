@@ -62,6 +62,7 @@ export default createStore({
     // },
 
     login: async (context, payload) => {
+      // const {email, password} = payload
       fetch("https://joint-ecom.herokuapp.com/users/login", {
         method: "POST",
         mode: "no-cors",
@@ -73,10 +74,10 @@ export default createStore({
       // const userData = await response.json(); //stores the response from the database
       // if (!userData.length)
       //   return alert("No user has been found with these credentials.");
+      // console.log(payload);
       .then((res)=> res.json())
-      .then((data)=>{
-        console.log(payload);
-        localStorage.setItem("token", JSON.stringify(data))
+      .then((payload) => {
+        localStorage.setItem("token", JSON.stringify(payload))
         context.commit("setUser", payload);
       })
 
