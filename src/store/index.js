@@ -68,5 +68,35 @@ export default createStore({
           context.dispatch("getProduct", product);
         });
     },
+
+    editItem: async (context, item) => {
+      fetch("http://localhost:3000/items/" + id, {
+        method: "PUT",
+        body: JSON.stringify(item),
+        headers: {
+          "Content-type": "application/json; charset=UTF-8",
+        },
+      })
+        .then((response) => response.json())
+        .then(() => {
+          context.dispatch("getItems", item);
+        });
+    },
+
+    deleteItem: async (context, id) => {
+      fetch("http://localhost:3000/items/" + id, {
+        method: "DELETE",
+      }).then(() => {
+        context.dispatch("getItems");
+      });
+    },
+    addToCart: async (context, id) => {
+      this.state.cart.item.push(id);
+      context.dispatch("updateCart", this.state.cart);
+    },
+    deleteFromCart: async (context, id) => {
+      const newCart = context.state.cart.filter((item) => item.id != id);
+      context.commit("removeFromCart", newCart);
+    },
   },
 });
