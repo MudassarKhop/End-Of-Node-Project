@@ -1,4 +1,5 @@
 <template>
+
 	<div class="footer1">
 		<!-- <img
 			height="165px"
@@ -51,24 +52,27 @@
 	</div>
 	<div class="footer2">
 		<div id="foot">
-			<h1><span>Our Stores</span></h1>
-			<div>
-				<ul>
-					<li><i class="fa-solid fa-chevron-right"></i> London</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
-				</ul>
-			</div>
-			<div>
-				<ul>
-					<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
-					<li><i class="fa-solid fa-chevron-right"></i> Geneva</li>
-				</ul>
+			<div id="title"><h2 id="foot3h1"><span>Our Stores</span></h2></div>
+			<div id="row">
+
+				<div>
+					<ul>
+						<li><i class="fa-solid fa-chevron-right"></i> London</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Paris</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Milan</li>
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><i class="fa-solid fa-chevron-right"></i> Monaco</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Barcelona</li>
+						<li><i class="fa-solid fa-chevron-right"></i> Geneva</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div id="foot2">
-			<h1><span>Socials</span></h1>
+			<h2 id="foot3h1"><span>Socials</span></h2>
 			<div id="icons">
 				<p>
 					<a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
@@ -93,7 +97,7 @@
 			</div>
 		</div>
 		<div id="foot3">
-			<h1><span>Sign Up</span></h1>
+			<h2 id="foot3h1"><span>Sign Up</span></h2>
 			<p>Become a luxury member with exclusive benefits.</p>
 			<router-link to="/register"
 				><button class="btn">Register</button></router-link
@@ -101,7 +105,7 @@
 		</div>
 	</div>
 	<div class="footer3">
-		<p>all-rights-reserved/ Mudassar | Mika</p>
+		<p>©all-rights-reserved</p>
 	</div>
 </template>
 <script>
@@ -127,7 +131,14 @@
 		margin-bottom: none;
 		text-shadow: 3px 3px black;
 	}
-
+#foot3h1{
+			font-family: Maron;
+		font-size: 70px;
+		margin-bottom: none;
+		text-shadow: 3px 3px black;
+	color: #b1b942;
+	text-align: center;
+}
 	span {
 		color: #b1b942;
 	}
@@ -276,8 +287,7 @@
 		align-items: center;
 		padding: 10px;
 		border-top: 1px solid #b1b942;
-		border-right: 1px solid #b1b942;
-		border-left: 1px solid #b1b942;
+
 	}
 	.footer1 div {
 		display: flex;
@@ -300,19 +310,25 @@
 		align-items: center;
 		padding-top: 60px;
 		gap: 30px;
-		border-right: 1px solid #b1b942;
-		border-left: 1px solid #b1b942;
 	}
 	#foot {
 		width: 30%;
 		height: 80%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		color: white;
 		gap: 10px;
+		text-align: center;
+	}
+	#row{
+			display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
 	}
 	#foot li {
 		font-size: 18px;
@@ -320,7 +336,9 @@
 		font-family: "Cinzel Decorative", cursive;
 		letter-spacing: 2px;
 		list-style: none;
+		text-align: center;
 	}
+
 	#foot2 div {
 		display: flex;
 		flex-direction: row;
@@ -331,7 +349,7 @@
 	}
 	#foot2 {
 		width: 30%;
-		height: 80%;
+		min-height: 80%;
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -339,9 +357,11 @@
 		align-items: center;
 		color: white;
 		gap: 10px;
+		text-align: center;
 	}
 	#icons p {
 		gap: 30px;
+		text-align: center;
 	}
 	#foot3 p {
 		font-size: 18px;
@@ -362,7 +382,7 @@
 		color: white;
 	}
 	#foot3 button {
-		margin-top: 3px;
+		margin-top: 20px;
 		background-color: #183c38;
 		color: white;
 		padding: 5px;
@@ -373,14 +393,13 @@
 	/* footer small */
 	.footer3 {
 		height: 8vh;
+		max-width: 100%;
 		background-color: #183c38;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		border-right: 1px solid #b1b942;
-		border-left: 1px solid #b1b942;
 		border-bottom: 2px solid #b1b942;
 	}
 	.footer3 p {
@@ -402,5 +421,20 @@
 		transition: 0.6s;
 	}
 
+	@media only screen and (max-width: 1242px) {
+	.footer2 {
+		display: flex;
+		flex-direction: column;
+		gap: 50px;
+	}
+	#foot3{
+		padding-bottom: 60px;
+	}
+	 #foot,
+	 #foot2,
+	 #foot3{
+width: 100%;
+	 }
+	}
 	/*  */
 </style>

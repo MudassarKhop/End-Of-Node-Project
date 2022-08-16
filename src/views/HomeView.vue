@@ -23,6 +23,7 @@
 			</div>
 			<div class="div2">
 				<img
+				   class="img-fluid"
 					width="750"
 					src="https://i.postimg.cc/RhKVd9X1/pngegg-3-1.png"
 					alt=""
@@ -191,7 +192,7 @@
 	}
 	/* header */
 	#landing {
-		height: 81vh;
+		min-height: 81vh;
 		background-color: #131312;
 		background-size: cover;
 		border-bottom: 1px solid #b1b942;
@@ -409,7 +410,7 @@
 	}
 	/* about */
 	#about {
-		height: 100vh;
+		min-height: 100vh;
 		padding: 20px;
 		background-color: #131312;
 		display: flex;
@@ -618,7 +619,7 @@
 		margin-bottom: 5px;
 	}
 	#quick {
-		height: 80vh;
+		min-height: 80vh;
 		padding: 20px;
 		background-color: #131312;
 		display: flex;

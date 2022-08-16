@@ -1,27 +1,6 @@
 <template>
 	<section>
 		<div class="register">
-			<form>
-				<h1>Signs <span>In</span></h1>
-				<p>Welcome back.</p>
-				<div class="group">
-					<input type="text" required />
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Email</label>
-				</div>
-				<div class="group">
-					<input type="password" required />
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label>Password</label>
-				</div>
-				<button class="btn text-light">Login</button>
-			</form>
-		</div>
-	</section>
-	<section>
-		<div class="register">
 			<form @submit.prevent="login">
 				<h1>Signs <span>In</span></h1>
 				<p>Welcome back.</p>
